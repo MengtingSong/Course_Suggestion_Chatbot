@@ -13,7 +13,8 @@
         android:layout_height="wrap_content"
         android:text="ENG Course Planner"
         tools:layout_editor_absoluteX="57dp"
-        tools:layout_editor_absoluteY="26dp" />
+        tools:layout_editor_absoluteY="26dp"
+        style="@style/MyStyle"/>
 
     <ImageView
         android:id="@+id/icon"

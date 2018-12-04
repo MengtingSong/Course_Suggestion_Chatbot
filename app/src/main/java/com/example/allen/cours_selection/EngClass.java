@@ -1,21 +1,19 @@
 package com.example.allen.cours_selection;
 
-        import android.os.Bundle;
-        import android.support.v7.app.AppCompatActivity;
-        import android.view.View;
-        import android.widget.Button;
-        import android.widget.ImageView;
-        import android.widget.TextView;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 
-public class Subject extends AppCompatActivity {
+public class EngClass extends AppCompatActivity {
 
      Button opt1;
      Button opt2;
      Button opt3;
      Button opt4;
-     Button opt5;
-     Button opt6;
 
 
     ImageView icon;
@@ -24,14 +22,12 @@ public class Subject extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.subject);
+        setContentView(R.layout.engclass);
 
         opt1 = (Button)findViewById(R.id.btn1);
         opt2 = (Button)findViewById(R.id.btn2);
         opt3 = (Button)findViewById(R.id.btn3);
         opt4 = (Button)findViewById(R.id.btn4);
-        opt5 = (Button)findViewById(R.id.btn5);
-        opt6 = (Button)findViewById(R.id.btn6);
 
         icon = (ImageView)findViewById(R.id.icon);
         msg = (TextView)findViewById(R.id.msg);
