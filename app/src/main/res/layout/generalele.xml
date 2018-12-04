@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/socialpic"
+        style="@android:style/Widget.DeviceDefault.Light.ScrollView"
+        android:layout_width="368dp"
+        android:layout_height="164dp"
+        android:scrollbarStyle="insideOverlay"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="69dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/social"
+        android:layout_width="270dp"
+        android:layout_height="30dp"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="25dp" />
+
+    <TextView
+        android:id="@+id/human"
+        android:layout_width="283dp"
+        android:layout_height="32dp"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="260dp" />
+
+    <ScrollView
+        android:id="@+id/humanpic"
+        style="@android:style/Widget.DeviceDefault.Light.ScrollView"
+        android:layout_width="368dp"
+        android:layout_height="203dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="300dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

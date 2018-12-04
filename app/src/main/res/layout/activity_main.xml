@@ -1,52 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/Freshman"
+    <TextView
+        android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="51dp"
-        android:layout_marginLeft="51dp"
-        android:layout_marginTop="94dp"
-        android:text="Button" />
+        android:text="ENG Course Planner"
+        tools:layout_editor_absoluteX="57dp"
+        tools:layout_editor_absoluteY="26dp" />
 
-    <Button
-        android:id="@+id/Sophomore"
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="41dp"
+        android:layout_height="51dp"
+        app:srcCompat="@mipmap/ic_launcher"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="70dp" />
+
+    <TextView
+        android:id="@+id/id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/Freshman"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginEnd="55dp"
-        android:layout_marginRight="55dp"
-        android:text="Button" />
+        android:text="BU ID"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="268dp" />
 
-    <Button
-        android:id="@+id/Junior"
+    <EditText
+        android:id="@+id/input"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/Freshman"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="213dp"
-        android:text="Button" />
+        android:ems="10"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="78dp"
+        tools:layout_editor_absoluteY="267dp" />
+
+    <TextView
+        android:id="@+id/msg"
+        android:layout_width="273dp"
+        android:layout_height="61dp"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="62dp"
+        tools:layout_editor_absoluteY="77dp" />
 
     <Button
-        android:id="@+id/Senior"
+        android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/Junior"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginEnd="43dp"
-        android:layout_marginRight="43dp"
-        android:text="Button" />
+        android:text="Button"
+        tools:layout_editor_absoluteX="78dp"
+        tools:layout_editor_absoluteY="350dp" />
 
-</RelativeLayout>
+</android.support.constraint.ConstraintLayout>

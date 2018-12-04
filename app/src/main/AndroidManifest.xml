@@ -16,10 +16,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Freshman" />
-        <activity android:name=".Sophomore" />
-        <activity android:name=".Junior" />
-        <activity android:name=".Senior"></activity>
+        <activity android:name=".Year" />
+        <activity android:name=".Freshman1" />
+        <activity android:name=".Freshman2" />
+        <activity android:name=".Sophomore1" />
+        <activity android:name=".Sophomore2" />
+        <activity android:name=".Junior1" />
+        <activity android:name=".Junior2" />
+        <activity android:name=".Senior1" />
+        <activity android:name=".Senior2" />
+        <activity android:name=".Course" />
+        <activity android:name=".Subject" />
+        <activity android:name=".GeneralEle" />
+        //MT: I edited the names here and added some items. Pls check.
+
     </application>
 
 </manifest>
