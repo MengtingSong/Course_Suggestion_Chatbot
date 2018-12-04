@@ -3,11 +3,11 @@ package com.example.allen.cours_selection;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class Senior extends AppCompatActivity {
+public class Courseinfor extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_senior);
+        setContentView(R.layout.activity_courseinfor);
     }
 }

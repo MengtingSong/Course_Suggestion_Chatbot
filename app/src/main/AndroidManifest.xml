@@ -17,9 +17,16 @@
             </intent-filter>
         </activity>
         <activity android:name=".Freshman" />
-        <activity android:name=".Sophomore" />
-        <activity android:name=".Junior" />
-        <activity android:name=".Senior"></activity>
+        <activity android:name=".Junior2" />
+        <activity android:name=".Courseinfor" />
+        <activity android:name=".Junior1" />
+        <activity android:name=".Freshman2" />
+        <activity android:name=".Sophomore1" />
+        <activity android:name=".Sophomore2" />
+        <activity android:name=".Senior1" />
+        <activity android:name=".Senior2" />
+        <activity android:name=".Freshman1" />
+        <activity android:name=".Interest"></activity>
     </application>
 
 </manifest>
