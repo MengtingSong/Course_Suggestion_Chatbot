@@ -7,95 +7,84 @@
 
     <TextView
         android:id="@+id/code"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="54dp"
-        android:layout_marginLeft="54dp"
+        android:layout_width="92dp"
+        android:layout_height="20dp"
         android:layout_marginTop="58dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
         android:layout_marginBottom="33dp"
         android:text="TextView"
         app:layout_constraintBottom_toTopOf="@+id/credits"
-        app:layout_constraintEnd_toStartOf="@+id/name"
-        app:layout_constraintHorizontal_chainStyle="spread"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@+id/credits"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.57" />
+        app:layout_constraintVertical_bias="0.57"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
 
     <TextView
         android:id="@+id/name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="85dp"
+        android:layout_height="18dp"
         android:layout_marginStart="27dp"
         android:layout_marginLeft="27dp"
         android:layout_marginTop="58dp"
-        android:layout_marginEnd="187dp"
-        android:layout_marginRight="187dp"
         android:layout_marginBottom="33dp"
         android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/pre"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/code"
         app:layout_constraintStart_toEndOf="@+id/code"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/code"
+        app:layout_constraintVertical_bias="0.651"
         app:layout_constraintVertical_chainStyle="spread_inside" />
 
     <TextView
         android:id="@+id/credits"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="54dp"
-        android:layout_marginLeft="54dp"
+        android:layout_width="70dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
         android:layout_marginBottom="45dp"
         android:text="TextView"
         app:layout_constraintBottom_toTopOf="@+id/discrip"
-        app:layout_constraintEnd_toStartOf="@+id/pre"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/discrip"
         app:layout_constraintTop_toBottomOf="@+id/code" />
 
     <TextView
         android:id="@+id/pre"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="71dp"
+        android:layout_height="23dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
         android:layout_marginBottom="44dp"
         android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/discrip"
+        app:layout_constraintBottom_toBottomOf="@+id/credits"
         app:layout_constraintEnd_toStartOf="@+id/future"
-        app:layout_constraintTop_toBottomOf="@+id/name" />
+        app:layout_constraintTop_toTopOf="@+id/credits"
+        app:layout_constraintVertical_bias="0.262" />
 
     <TextView
         android:id="@+id/future"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="83dp"
+        android:layout_height="23dp"
         android:layout_marginTop="120dp"
-        android:layout_marginEnd="85dp"
-        android:layout_marginRight="85dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginRight="56dp"
         android:layout_marginBottom="44dp"
         android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/discrip"
+        app:layout_constraintBottom_toBottomOf="@+id/pre"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/pre"
+        app:layout_constraintVertical_bias="0.737" />
 
     <TextView
         android:id="@+id/discrip"
-        android:layout_width="261dp"
+        android:layout_width="275dp"
         android:layout_height="180dp"
-        android:layout_marginStart="54dp"
-        android:layout_marginLeft="54dp"
-        android:layout_marginEnd="69dp"
-        android:layout_marginRight="69dp"
-        android:layout_marginBottom="158dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="140dp"
         android:text="TextView"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/floatingActionButton2"
@@ -109,6 +98,19 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="?android:attr/floatingToolbarCloseDrawable" />
+
+    <android.support.constraint.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp" />
 </android.support.constraint.ConstraintLayout>
 
 <android.support.design.widget.FloatingActionButton
