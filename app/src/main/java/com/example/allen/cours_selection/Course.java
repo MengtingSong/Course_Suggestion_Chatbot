@@ -17,6 +17,7 @@ public class Course extends AppCompatActivity {
     private TextView pre;
     private TextView future;
     private TextView discrip;
+    //test
 
 
     @Override
