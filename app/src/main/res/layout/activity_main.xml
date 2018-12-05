@@ -164,8 +164,9 @@
         android:layout_marginLeft="15dp"
         android:layout_marginEnd="42dp"
         android:layout_marginRight="42dp"
+        android:layout_marginBottom="21dp"
         android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/btn1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/icon"
-        tools:layout_editor_absoluteY="87dp" />
+        app:layout_constraintStart_toEndOf="@+id/icon" />
 </android.support.constraint.ConstraintLayout>
