@@ -1,5 +1,6 @@
 package com.example.allen.cours_selection;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -8,7 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.ScrollView;
 
-public class engelective extends AppCompatActivity {
+public class engelective extends AppCompatActivity implements View.OnClickListener{
 
     Button opt1;
     Button opt2;
@@ -32,31 +33,37 @@ public class engelective extends AppCompatActivity {
         icon = (ImageView)findViewById(R.id.icon);
         msg = (TextView)findViewById(R.id.msg);
 
-        opt1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //code for opt1 screen to be added here
-            }
-        });
-        opt2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //code for opt2 screen to be added here
-            }
-        });
+        opt1.setOnClickListener(this);
+        opt2.setOnClickListener(this);
 
-        opt3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //code for opt3 screen to be added here
-            }
-        });
+        opt3.setOnClickListener(this);
 
-        opt4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //code for opt4 screen to be added here
+        opt4.setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.btn1: {
+                Intent EE_Breadth =new Intent(this, engelelist.class);
+                EE_Breadth.putExtra("electivename", "EE Breadth");
+                startActivity(EE_Breadth);
             }
-        });
+            case R.id.btn2: {
+                Intent Core_Elective = new Intent(this, engelelist.class);
+                Core_Elective.putExtra("electivename", "Core Elective");
+                startActivity(Core_Elective);
+            }
+            case R.id.btn3: {
+                Intent CE_Elective = new Intent(this, engelelist.class);
+                CE_Elective.putExtra("electivename", "CE Elective");
+                startActivity(CE_Elective);
+            }
+            case R.id.btn4: {
+                Intent technical = new Intent(this, engelelist.class);
+                technical.putExtra("electivename", "technical");
+                startActivity(technical);
+            }
+        }
     }
 }
