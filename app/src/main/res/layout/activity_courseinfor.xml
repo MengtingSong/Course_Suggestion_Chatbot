@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -9,47 +10,89 @@
         android:id="@+id/code"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginLeft="54dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="33dp"
         android:text="TextView"
-        tools:layout_editor_absoluteX="54dp"
-        tools:layout_editor_absoluteY="58dp" />
+        app:layout_constraintBottom_toTopOf="@+id/credits"
+        app:layout_constraintEnd_toStartOf="@+id/name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.57" />
 
     <TextView
         android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="187dp"
+        android:layout_marginRight="187dp"
+        android:layout_marginBottom="33dp"
         android:text="TextView"
-        tools:layout_editor_absoluteX="139dp"
-        tools:layout_editor_absoluteY="58dp" />
+        app:layout_constraintBottom_toTopOf="@+id/pre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/code"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/credits"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginLeft="54dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="45dp"
         android:text="TextView"
-        tools:layout_editor_absoluteX="54dp"
-        tools:layout_editor_absoluteY="110dp" />
+        app:layout_constraintBottom_toTopOf="@+id/discrip"
+        app:layout_constraintEnd_toStartOf="@+id/pre"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/code" />
 
     <TextView
         android:id="@+id/pre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="44dp"
         android:text="TextView"
-        tools:layout_editor_absoluteX="139dp"
-        tools:layout_editor_absoluteY="110dp" />
+        app:layout_constraintBottom_toTopOf="@+id/discrip"
+        app:layout_constraintEnd_toStartOf="@+id/future"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
 
     <TextView
         android:id="@+id/future"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginRight="85dp"
+        android:layout_marginBottom="44dp"
         android:text="TextView"
-        tools:layout_editor_absoluteX="241dp"
-        tools:layout_editor_absoluteY="110dp" />
+        app:layout_constraintBottom_toTopOf="@+id/discrip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/discrip"
         android:layout_width="261dp"
         android:layout_height="180dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginLeft="54dp"
+        android:layout_marginEnd="69dp"
+        android:layout_marginRight="69dp"
+        android:layout_marginBottom="158dp"
         android:text="TextView"
-        tools:layout_editor_absoluteX="54dp"
-        tools:layout_editor_absoluteY="173dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </android.support.constraint.ConstraintLayout>

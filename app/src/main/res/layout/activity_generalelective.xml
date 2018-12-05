@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -10,9 +11,15 @@
         style="@android:style/Widget.DeviceDefault.Light.ScrollView"
         android:layout_width="368dp"
         android:layout_height="164dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
         android:scrollbarStyle="insideOverlay"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="69dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/social">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -24,25 +31,47 @@
         android:id="@+id/social"
         android:layout_width="270dp"
         android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginRight="106dp"
+        android:layout_marginBottom="14dp"
         android:text="TextView"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="25dp" />
+        app:layout_constraintBottom_toTopOf="@+id/socialpic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/human"
         android:layout_width="283dp"
         android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginRight="85dp"
+        android:layout_marginBottom="8dp"
         android:text="TextView"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="260dp" />
+        app:layout_constraintBottom_toTopOf="@+id/humanpic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/socialpic" />
 
     <ScrollView
         android:id="@+id/humanpic"
         style="@android:style/Widget.DeviceDefault.Light.ScrollView"
         android:layout_width="368dp"
         android:layout_height="203dp"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="300dp">
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
