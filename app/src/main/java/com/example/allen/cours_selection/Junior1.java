@@ -156,13 +156,13 @@ public class Junior1 extends AppCompatActivity implements View.OnClickListener{
                 startActivity(courseelectiveintent);
                 break;
             }
-            /*case R.id.btn5: {
-                Intent junior1intent = new Intent(this, Courseinfor.class);
+            case R.id.btn5: {
+                Intent generalelective = new Intent(this, generalelective.class);
                 //readCourselistbytype("Optics & Photonics", thecourse);
-                junior1intent.putExtra("MyClass", thecourse);
-                startActivity(junior1intent);
+                //generalelective.putExtra("MyClass", thecourse);
+                startActivity(generalelective);
                 break;
-            }*/
+            }
             default: {
                 break;
             }
