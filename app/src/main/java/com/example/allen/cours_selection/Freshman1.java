@@ -96,39 +96,39 @@ public class Freshman1 extends AppCompatActivity implements View.OnClickListener
         //The switch statements grab the id values of the button pressed and calculates the tip accordingly
         switch (v.getId()) {
             case R.id.btn1: {
-                Intent freshman1intent = new Intent(this, Freshman1.class);
+                Intent courseinforintent = new Intent(this, Courseinfor.class);
                 readCourselist("CAS MA 123", thecourse);
-                freshman1intent.putExtra("MyClass", thecourse);
-                startActivity(freshman1intent);
+                courseinforintent.putExtra("MyClass", thecourse);
+                startActivity(courseinforintent);
                 break;
             }
 
             case R.id.btn2: {
-                Intent freshman2intent = new Intent(this, Courseinfor.class);
+                Intent courseinforintent = new Intent(this, Courseinfor.class);
                 readCourselist("ENG EK 100", thecourse);
-                freshman2intent.putExtra("MyClass", thecourse);
-                startActivity(freshman2intent);
+                courseinforintent.putExtra("MyClass", thecourse);
+                startActivity(courseinforintent);
                 break;
             }
             case R.id.btn3: {
-                Intent sophomore1intent = new Intent(this, Courseinfor.class);
+                Intent courseinforintent = new Intent(this, Courseinfor.class);
                 readCourselist("CAS CH 131", thecourse);
-                sophomore1intent.putExtra("MyClass", thecourse);
-                startActivity(sophomore1intent);
+                courseinforintent.putExtra("MyClass", thecourse);
+                startActivity(courseinforintent);
                 break;
             }
             case R.id.btn4: {
-                Intent sophomore2intent = new Intent(this, Courseinfor.class);
+                Intent courseinforintent = new Intent(this, Courseinfor.class);
                 readCourselist("ENG EK 127", thecourse);
-                sophomore2intent.putExtra("MyClass", thecourse);
-                startActivity(sophomore2intent);
+                courseinforintent.putExtra("MyClass", thecourse);
+                startActivity(courseinforintent);
                 break;
             }
             case R.id.btn5: {
-                Intent junior1intent = new Intent(this, Courseinfor.class);
+                Intent courseinforintent = new Intent(this, Courseinfor.class);
                 readCourselist("CAS WR 120", thecourse);
-                junior1intent.putExtra("MyClass", thecourse);
-                startActivity(junior1intent);
+                courseinforintent.putExtra("MyClass", thecourse);
+                startActivity(courseinforintent);
                 break;
             }
             default: {
