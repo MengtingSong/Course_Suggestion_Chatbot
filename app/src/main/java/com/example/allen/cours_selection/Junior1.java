@@ -22,7 +22,7 @@ public class Junior1 extends AppCompatActivity implements View.OnClickListener{
 
     TextView txt1;
 
-    Course thecourse;
+    Course thecourse=new Course();
 
 
     @Override
@@ -48,7 +48,7 @@ public class Junior1 extends AppCompatActivity implements View.OnClickListener{
 
         sub5.setOnClickListener(this);
     }
-    public void readCourselist(String coursecode, Course onecourse)
+    public void readCourselist(String coursecode)
     {
         InputStream is = getResources().openRawResource(R.raw.overall_ece_sheet);
         BufferedReader reader = new BufferedReader(
@@ -58,61 +58,24 @@ public class Junior1 extends AppCompatActivity implements View.OnClickListener{
         String line = "";
         try {
             while ((line = reader.readLine()) != null) {
-                //Log.d("Myactivity","Line: "+line);
+                Log.d("Myactivity","Line: "+line);
                 //split by ','
                 String[] token = line.split((","));
                 //read the data
                 if (token[0].equals(coursecode)) {
                     //Course onecourse = new Course();
-                    onecourse.setCode(token[0]);
-                    onecourse.setName(token[1]);
+                    thecourse.setCode(token[0]);
+                    thecourse.setName(token[1]);
                     //Log.d("Myactivity", onecourse.getName());
-                    onecourse.setType(token[2]);
-                    onecourse.setYear(token[3]);
-                    onecourse.setPrerequisite(token[4]);
-                    onecourse.setCredit(token[5]);
-                    onecourse.setFuture(token[6]);
-                    onecourse.setSubject_speci(token[7]);
-                    onecourse.setDescription(token[8]);
+                    thecourse.setType(token[2]);
+                    thecourse.setYear(token[3]);
+                    thecourse.setPrerequisite(token[4]);
+                    thecourse.setCredit(token[5]);
+                    thecourse.setFuture(token[6]);
+                    thecourse.setSubject_speci(token[7]);
+                    thecourse.setDescription(token[8]);
                     Log.d("Myactivity", "here!!!!!!!!!!!!!!!!!!!!!");
-                    Log.d("Myactivity", onecourse.getYear());
-                    break;
-                }
-            }
-        } catch (IOException e) {
-            Log.wtf("MyActivity", "Error reading data file on line" + line, e);
-            e.printStackTrace();
-        }
-
-    }
-    public void readCourselistbytype(String coursetype, Course onecourse)
-    {
-        InputStream is = getResources().openRawResource(R.raw.overall_ece_sheet);
-        BufferedReader reader = new BufferedReader(
-                new InputStreamReader(is)
-        );
-
-        String line = "";
-        try {
-            while ((line = reader.readLine()) != null) {
-                //Log.d("Myactivity","Line: "+line);
-                //split by ','
-                String[] token = line.split((","));
-                //read the data
-                if (token[7].equals(coursetype)) {
-                    //Course onecourse = new Course();
-                    onecourse.setCode(token[0]);
-                    onecourse.setName(token[1]);
-                    //Log.d("Myactivity", onecourse.getName());
-                    onecourse.setType(token[2]);
-                    onecourse.setYear(token[3]);
-                    onecourse.setPrerequisite(token[4]);
-                    onecourse.setCredit(token[5]);
-                    onecourse.setFuture(token[6]);
-                    onecourse.setSubject_speci(token[7]);
-                    onecourse.setDescription(token[8]);
-                    Log.d("Myactivity", "here!!!!!!!!!!!!!!!!!!!!!");
-                    Log.d("Myactivity", onecourse.getYear());
+                    Log.d("Myactivity", thecourse.getYear());
                     break;
                 }
             }
@@ -131,7 +94,7 @@ public class Junior1 extends AppCompatActivity implements View.OnClickListener{
         switch (v.getId()) {
             case R.id.btn1: {
                 Intent courseinforintent = new Intent(this, Courseinfor.class);
-                readCourselist("ENG EK 381", thecourse);
+                readCourselist("ENG EK 381");
                 courseinforintent.putExtra("MyClass", thecourse);
                 startActivity(courseinforintent);
                 break;
@@ -139,14 +102,14 @@ public class Junior1 extends AppCompatActivity implements View.OnClickListener{
 
             case R.id.btn2: {
                 Intent courseinforintent = new Intent(this, Courseinfor.class);
-                readCourselist("ENG EC 413", thecourse);
+                readCourselist("ENG EC 413");
                 courseinforintent.putExtra("MyClass", thecourse);
                 startActivity(courseinforintent);
                 break;
             }
             case R.id.btn3: {
                 Intent courseinforintent = new Intent(this, Courseinfor.class);
-                readCourselist("CAS MA 193", thecourse);
+                readCourselist("CAS MA 193");
                 courseinforintent.putExtra("MyClass", thecourse);
                 startActivity(courseinforintent);
                 break;
