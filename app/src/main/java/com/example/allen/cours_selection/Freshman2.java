@@ -31,7 +31,7 @@ public class Freshman2 extends AppCompatActivity implements View.OnClickListener
         sub4 = (Button)findViewById(R.id.btn4);
         sub5 = (Button)findViewById(R.id.btn5);
 
-        txt1 = (TextView)findViewById(R.id.txt1);
+        txt1 = (TextView)findViewById(R.id.msg);
 
         sub1.setOnClickListener(this);
 

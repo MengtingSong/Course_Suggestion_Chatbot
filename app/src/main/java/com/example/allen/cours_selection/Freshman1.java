@@ -24,7 +24,7 @@ public class Freshman1 extends AppCompatActivity implements View.OnClickListener
     Button sub5;
     //public List<Course> courselist= new ArrayList<Course>(100);
     //readCourselist();
-    Course thecourse;
+    Course thecourse=new Course();
     TextView txt1;
 
     @Override
@@ -39,7 +39,7 @@ public class Freshman1 extends AppCompatActivity implements View.OnClickListener
         sub4 = (Button)findViewById(R.id.btn4);
         sub5 = (Button)findViewById(R.id.btn5);
 
-        txt1 = (TextView)findViewById(R.id.txt1);
+        txt1 = (TextView)findViewById(R.id.descrip);
 
         sub1.setOnClickListener(this);
 
@@ -51,7 +51,7 @@ public class Freshman1 extends AppCompatActivity implements View.OnClickListener
 
         sub5.setOnClickListener(this);
     }
-    public void readCourselist(String coursecode, Course onecourse)
+    public void readCourselist(String coursecode)
     {
         InputStream is = getResources().openRawResource(R.raw.overall_ece_sheet);
         BufferedReader reader = new BufferedReader(
@@ -61,24 +61,24 @@ public class Freshman1 extends AppCompatActivity implements View.OnClickListener
         String line = "";
         try {
             while ((line = reader.readLine()) != null) {
-                //Log.d("Myactivity","Line: "+line);
+                Log.d("Myactivity","Line: "+line);
                 //split by ','
                 String[] token = line.split((","));
                 //read the data
                 if (token[0].equals(coursecode)) {
                     //Course onecourse = new Course();
-                    onecourse.setCode(token[0]);
-                    onecourse.setName(token[1]);
+                    thecourse.setCode(token[0]);
+                    thecourse.setName(token[1]);
                     //Log.d("Myactivity", onecourse.getName());
-                    onecourse.setType(token[2]);
-                    onecourse.setYear(token[3]);
-                    onecourse.setPrerequisite(token[4]);
-                    onecourse.setCredit(token[5]);
-                    onecourse.setFuture(token[6]);
-                    onecourse.setSubject_speci(token[7]);
-                    onecourse.setDescription(token[8]);
+                    thecourse.setType(token[2]);
+                    thecourse.setYear(token[3]);
+                    thecourse.setPrerequisite(token[4]);
+                    thecourse.setCredit(token[5]);
+                    thecourse.setFuture(token[6]);
+                    thecourse.setSubject_speci(token[7]);
+                    thecourse.setDescription(token[8]);
                     Log.d("Myactivity", "here!!!!!!!!!!!!!!!!!!!!!");
-                    Log.d("Myactivity", onecourse.getYear());
+                    Log.d("Myactivity", thecourse.getYear());
                     break;
                 }
             }
@@ -97,7 +97,7 @@ public class Freshman1 extends AppCompatActivity implements View.OnClickListener
         switch (v.getId()) {
             case R.id.btn1: {
                 Intent courseinforintent = new Intent(this, Courseinfor.class);
-                readCourselist("CAS MA 123", thecourse);
+                readCourselist("CAS MA 123");
                 courseinforintent.putExtra("MyClass", thecourse);
                 startActivity(courseinforintent);
                 break;
@@ -105,28 +105,28 @@ public class Freshman1 extends AppCompatActivity implements View.OnClickListener
 
             case R.id.btn2: {
                 Intent courseinforintent = new Intent(this, Courseinfor.class);
-                readCourselist("ENG EK 100", thecourse);
+                readCourselist("ENG EK 100");
                 courseinforintent.putExtra("MyClass", thecourse);
                 startActivity(courseinforintent);
                 break;
             }
             case R.id.btn3: {
                 Intent courseinforintent = new Intent(this, Courseinfor.class);
-                readCourselist("CAS CH 131", thecourse);
+                readCourselist("CAS CH 131");
                 courseinforintent.putExtra("MyClass", thecourse);
                 startActivity(courseinforintent);
                 break;
             }
             case R.id.btn4: {
                 Intent courseinforintent = new Intent(this, Courseinfor.class);
-                readCourselist("ENG EK 127", thecourse);
+                readCourselist("ENG EK 127");
                 courseinforintent.putExtra("MyClass", thecourse);
                 startActivity(courseinforintent);
                 break;
             }
             case R.id.btn5: {
                 Intent courseinforintent = new Intent(this, Courseinfor.class);
-                readCourselist("CAS WR 120", thecourse);
+                readCourselist("CAS WR 120");
                 courseinforintent.putExtra("MyClass", thecourse);
                 startActivity(courseinforintent);
                 break;

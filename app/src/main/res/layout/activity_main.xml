@@ -26,13 +26,14 @@
         android:id="@+id/btn1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="55dp"
-        android:layout_marginLeft="55dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="204dp"
         android:background="@android:color/holo_green_light"
         android:text=" FRESHMAN 1 "
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="176dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn2"

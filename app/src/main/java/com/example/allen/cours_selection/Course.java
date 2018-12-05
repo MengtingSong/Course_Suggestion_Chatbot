@@ -3,8 +3,7 @@ package com.example.allen.cours_selection;
 import java.io.Serializable;
 
 @SuppressWarnings("serial")
-public class Course implements Serializable
-{
+public class Course implements Serializable {
 
     protected String name;
     protected String code;

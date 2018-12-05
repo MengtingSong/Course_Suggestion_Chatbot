@@ -12,13 +12,15 @@ public class Courseinfor extends AppCompatActivity {
     TextView pre;
     TextView future;
     TextView discrip;
-    Intent i = getIntent();
-    Course thecourse = (Course)i.getSerializableExtra("MyClass");
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_courseinfor);
+
+        Intent i = getIntent();
+        Course thecourse = (Course)i.getSerializableExtra("MyClass");
 
         code = (TextView)findViewById(R.id.code);
         name = (TextView)findViewById(R.id.name);
