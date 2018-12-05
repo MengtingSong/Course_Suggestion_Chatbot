@@ -26,7 +26,10 @@
         <activity android:name=".Senior1" />
         <activity android:name=".Senior2" />
         <activity android:name=".Freshman1" />
-        <activity android:name=".Interest"></activity>
+        <activity android:name=".engelective" />
+        <activity android:name=".subject" />
+        <activity android:name=".generalelective" />
+        <activity android:name=".engelelist"></activity>
     </application>
 
 </manifest>
