@@ -31,6 +31,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="379dp"
         android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/floatingActionButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/icon"
         app:layout_constraintTop_toTopOf="parent" />
@@ -137,6 +138,5 @@
             android:layout_height="wrap_content"
             android:orientation="vertical" />
     </ScrollView>
-
 
 </android.support.constraint.ConstraintLayout>
