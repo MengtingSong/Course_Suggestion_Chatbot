@@ -3,24 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="108dp"
-        android:layout_marginLeft="108dp"
-        android:layout_marginTop="45dp"
-        android:layout_marginEnd="105dp"
-        android:layout_marginRight="105dp"
-        android:layout_marginBottom="21dp"
-        android:text="SENIOR 2  "
-        android:textColor="@android:color/holo_orange_dark"
-        android:textSize="36sp"
-        app:layout_constraintBottom_toTopOf="@+id/msg"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <Button
         android:id="@+id/btn1"
         android:layout_width="wrap_content"
@@ -82,11 +64,10 @@
         android:layout_height="61dp"
         android:layout_marginStart="28dp"
         android:layout_marginLeft="28dp"
-        android:layout_marginTop="20dp"
         android:layout_marginEnd="55dp"
         android:layout_marginRight="55dp"
         android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/icon"
-        app:layout_constraintTop_toBottomOf="@+id/name" />
+        tools:layout_editor_absoluteY="114dp" />
 </android.support.constraint.ConstraintLayout>

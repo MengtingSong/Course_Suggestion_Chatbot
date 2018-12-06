@@ -1,12 +1,10 @@
 <resources>
-    <string name="app_name">Cours_Selection</string>
+    <string name="app_name">Professor BU-ENG Course</string>
     <string name="name">Name</string>
-    <string name="buid">BUID</string>
+    <string name="id">BU ID</string>
     <string name="button_freshman">Freshman</string>
     <string name="button_sophomore">Sophomore</string>
     <string name="button_junior">Junior</string>
     <string name="button_senior">Senior</string>
     <string name="input_name">Name</string>
-    <string name="input_buid">Uxxxxxxxx</string>
-    <string name="button">Button</string>
 </resources>
