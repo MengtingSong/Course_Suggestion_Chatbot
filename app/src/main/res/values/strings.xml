@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Professor BU-ENG Course</string>
+    <string name="app_name">Prof. Course Plan</string>
     <string name="name">Name</string>
     <string name="id">BU ID</string>
     <string name="button_freshman">Freshman</string>
@@ -7,4 +7,7 @@
     <string name="button_junior">Junior</string>
     <string name="button_senior">Senior</string>
     <string name="input_name">Name</string>
+    <string name="error_password">Please input a correct BU ID.</string>
+    <string name="subject_title">Title</string>
+    <string name="subject_description">Secondary text</string>
 </resources>
