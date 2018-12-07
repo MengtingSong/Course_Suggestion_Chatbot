@@ -45,24 +45,30 @@ public class engelective extends AppCompatActivity implements View.OnClickListen
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btn1: {
-                Intent EE_Breadth =new Intent(this, engelelist.class);
-                EE_Breadth.putExtra("electivename", "EE Breadth");
-                startActivity(EE_Breadth);
+                Intent electivename =new Intent(this, subject.class);
+                electivename.putExtra("electivename", "EE Breadth");
+                startActivity(electivename);
+                break;
             }
             case R.id.btn2: {
-                Intent Core_Elective = new Intent(this, engelelist.class);
-                Core_Elective.putExtra("electivename", "Core Elective");
-                startActivity(Core_Elective);
+                Intent electivename = new Intent(this, subject.class);
+                electivename.putExtra("electivename", "Core Elective");
+                startActivity(electivename);
+                break;
             }
             case R.id.btn3: {
-                Intent CE_Elective = new Intent(this, engelelist.class);
-                CE_Elective.putExtra("electivename", "CE Elective");
-                startActivity(CE_Elective);
+                Intent electivename = new Intent(this, subject.class);
+                electivename.putExtra("electivename", "CE Elective");
+                startActivity(electivename);
+                break;
+
             }
             case R.id.btn4: {
-                Intent technical = new Intent(this, engelelist.class);
-                technical.putExtra("electivename", "technical");
-                startActivity(technical);
+                Intent electivename = new Intent(this, subject.class);
+                electivename.putExtra("electivename", "technical");
+                startActivity(electivename);
+                break;
+
             }
         }
     }
