@@ -1,11 +1,12 @@
 package com.example.allen.cours_selection;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.design.button.MaterialButton;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -14,16 +15,17 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 
 public class subject extends AppCompatActivity implements View.OnClickListener{
-    Button digital;
-    Button computer;
-    Button system_control;
-    Button electro;
-    Button optics;
-    Button bioeng;
+    MaterialButton digital;
+    MaterialButton computer;
+    MaterialButton system_control;
+    MaterialButton electro;
+    MaterialButton optics;
+    MaterialButton bioeng;
     ArrayList<Course> courselists = new ArrayList<Course>();
     //Course onecourse;
 
 
+    @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -31,12 +33,12 @@ public class subject extends AppCompatActivity implements View.OnClickListener{
         setContentView(R.layout.activity_subject);
 
 
-        digital=(Button)findViewById(R.id.sub2);
-        computer=(Button)findViewById(R.id.sub1);
-        system_control=(Button)findViewById(R.id.sub4);
-        electro=(Button)findViewById(R.id.sub3);
-        optics=(Button)findViewById(R.id.sub8);
-        bioeng=(Button)findViewById(R.id.sub6);
+        digital=(MaterialButton)findViewById(R.id.sub2);
+        computer=(MaterialButton)findViewById(R.id.sub1);
+        system_control=(MaterialButton)findViewById(R.id.sub4);
+        electro=(MaterialButton)findViewById(R.id.sub3);
+        optics=(MaterialButton)findViewById(R.id.sub8);
+        bioeng=(MaterialButton)findViewById(R.id.sub6);
 
         digital.setOnClickListener(this);
         computer.setOnClickListener(this);
@@ -129,12 +131,12 @@ public class subject extends AppCompatActivity implements View.OnClickListener{
             }
             case R.id.sub4: {
                 courselists.clear();
-                generateListcontent(electivename, "System Control & Microsystem & Electrical Energy ");
+                generateListcontent(electivename, "System Control & Microsystem & Electrical Energy ");
                 if (courselists.size()!=0){
-                Intent theelectivename =new Intent(this, engelelist.class);
-                theelectivename.putExtra("subject", "System Control & Microsystem & Electrical Energy ");
-                theelectivename.putExtra("electivename", electivename);
-                startActivity(theelectivename);}
+                    Intent theelectivename =new Intent(this, engelelist.class);
+                    theelectivename.putExtra("subject", "System Control & Microsystem & Electrical Energy ");
+                    theelectivename.putExtra("electivename", electivename);
+                    startActivity(theelectivename);}
                 else
                 {
                     Intent theempty = new Intent(this, empty.class);
@@ -178,10 +180,10 @@ public class subject extends AppCompatActivity implements View.OnClickListener{
             }
             case R.id.sub6: {
                 courselists.clear();
-                generateListcontent(electivename, "Bioengineering ");
+                generateListcontent(electivename, "Bioengineering ");
                 if (courselists.size()!=0) {
                     Intent theelectivename = new Intent(this, engelelist.class);
-                    theelectivename.putExtra("subject", "Bioengineering ");
+                    theelectivename.putExtra("subject", "Bioengineering ");
                     startActivity(theelectivename);
                 }
                 else
@@ -189,7 +191,7 @@ public class subject extends AppCompatActivity implements View.OnClickListener{
                     Intent theempty = new Intent(this, empty.class);
                     startActivity(theempty);
                 }
-                    break;
+                break;
             }
 
         }

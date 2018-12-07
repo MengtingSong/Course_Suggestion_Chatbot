@@ -33,12 +33,15 @@
                 android:text="@string/subject_title"
                 android:textAppearance="?attr/textAppearanceHeadline6" />
 
-            <TextView
-                android:id="@+id/product_price"
-                android:layout_width="match_parent"
+            <Button
+                android:id="@+id/sub"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/subject_description"
-                android:textAppearance="?attr/textAppearanceBody2" />
+                android:layout_marginTop="80dp"
+                android:layout_marginEnd="96dp"
+                android:layout_marginRight="96dp"
+                android:text="See More!" />
+
         </LinearLayout>
     </LinearLayout>
 </android.support.design.card.MaterialCardView>

@@ -3,7 +3,9 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574b</color>
     <color name="colorAccent">#008577</color>
-    <color name="toolbarIconColor">#FFFFFF</color>
+    <color name="textColorPrimary">#000000</color>
+    <color name="toolbarIconColor">@color/textColorPrimary</color>
     <color name="loginPageBackgroundColor">#FFFFFF</color>
-    <color name="productGridBackgroundColor">#FFFFFF</color>
+    <color name="productGridBackgroundColor">#ffffff</color>
+    <color name="colorControlActivated">#008577</color>
 </resources>

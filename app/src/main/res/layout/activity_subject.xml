@@ -4,97 +4,271 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".subject">
 
-    <Button
-        android:id="@+id/sub1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:layout_marginEnd="96dp"
-        android:layout_marginRight="96dp"
-        android:text="Computer Engineering"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/msg" />
-
-    <Button
-        android:id="@+id/sub2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
-        android:layout_marginLeft="1dp"
-        android:layout_marginTop="16dp"
-        android:text="Digital Signal Processing and Telecommunication"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/msg" />
-
-    <Button
-        android:id="@+id/sub3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="36dp"
-        android:layout_marginRight="36dp"
-        android:text="Electromagnetic and Electronic Design"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sub4" />
-
-    <Button
-        android:id="@+id/sub4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:text="System Control and Microsystem and Electrical Energy "
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sub2" />
-
-    <Button
-        android:id="@+id/sub6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="124dp"
-        android:layout_marginRight="124dp"
-        android:text="Bioengineering"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sub8" />
-
-    <Button
-        android:id="@+id/sub8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="100dp"
-        android:layout_marginRight="100dp"
-        android:text="Optics and Photonics"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sub3" />
 
     <ImageView
         android:id="@+id/icon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginLeft="44dp"
-        android:layout_marginTop="50dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
         app:layout_constraintEnd_toStartOf="@+id/msg"
+        app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/ic_launcher" />
+        app:srcCompat="@mipmap/ic_launcher"
+        tools:layout_conversion_absoluteHeight="50dp"
+        tools:layout_conversion_absoluteWidth="50dp" />
+
+    <ImageView
+        android:id="@+id/chatbubble"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/msg"
+        app:layout_constraintHorizontal_bias="0.554"
+        app:layout_constraintStart_toEndOf="@+id/icon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/chatbubble" />
+
 
     <TextView
         android:id="@+id/msg"
-        android:layout_width="151dp"
-        android:layout_height="76dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="93dp"
-        android:layout_marginRight="93dp"
-        android:text="TextView"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="In this elective branch, click on the subject name to see more course information!"
+        android:textAllCaps="false"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/icon"
+        app:layout_constraintTop_toTopOf="@+id/icon"
+        tools:layout_conversion_absoluteHeight="135dp"
+        tools:layout_conversion_absoluteWidth="208dp" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="536dp"
+        android:layout_marginTop="120dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/ce"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="@color/productGridBackgroundColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/ee">
+
+            <ImageView
+                android:id="@+id/cepic"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                app:srcCompat="@drawable/computer_engineering" />
+
+            <android.support.design.button.MaterialButton
+                android:id="@+id/sub1"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:background="@android:color/holo_green_light"
+                android:text="Computer Engineering"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/ee"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="@color/productGridBackgroundColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ce"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/eepic"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                app:srcCompat="@drawable/electronic" />
+
+            <android.support.design.button.MaterialButton
+                android:id="@+id/sub3"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:background="@android:color/holo_green_light"
+                android:text="Electromagnetic and Electronic Design"
+                android:textColor="@color/colorPrimary"
+                android:textSize="8sp"
+                android:textAllCaps="false"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sub2" />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/system"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            app:cardElevation="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/optic"
+            app:layout_constraintTop_toBottomOf="@+id/ee">
+
+            <ImageView
+                android:id="@+id/systempic"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                app:srcCompat="@drawable/system_control" />
+
+            <android.support.design.button.MaterialButton
+                android:id="@+id/sub4"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:background="@android:color/holo_green_light"
+                android:text="System Control and Microsystem and Electrical Energy "
+                android:textColor="@color/colorPrimary"
+                android:textSize="8sp"
+                android:textAllCaps="false"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sub3" />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/optic"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="@color/productGridBackgroundColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/system">
+
+            <ImageView
+                android:id="@+id/opticpic"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                app:srcCompat="@drawable/optics" />
+
+            <android.support.design.button.MaterialButton
+                android:id="@+id/sub8"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:background="@android:color/holo_green_light"
+                android:text="Optics and Photonics"
+                android:textColor="@color/colorPrimary"
+                android:textSize="10sp"
+                android:textAllCaps="false"
+                tools:layout_editor_absoluteX="240dp"
+                tools:layout_editor_absoluteY="142dp" />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/telecom"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="16dp"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="@color/productGridBackgroundColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/optic">
+
+            <ImageView
+                android:id="@+id/telecompic"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                app:srcCompat="@drawable/telecommunication" />
+
+            <android.support.design.button.MaterialButton
+                android:id="@+id/sub2"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:background="@android:color/holo_green_light"
+                android:text="Signal Processing and Telecommunication"
+                android:textColor="@color/colorPrimary"
+                android:textSize="8sp"
+                android:textAllCaps="false"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="180dp" />
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/be"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="@color/productGridBackgroundColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/telecom"
+            app:layout_constraintTop_toTopOf="@+id/telecom">
+
+            <ImageView
+                android:id="@+id/bepic"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                app:srcCompat="@drawable/bioengineering" />
+
+            <android.support.design.button.MaterialButton
+                android:id="@+id/sub6"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="83dp"
+                android:background="@android:color/holo_green_light"
+                android:text="Bioengineering"
+                android:textColor="@color/colorPrimary"
+                android:textSize="10sp"
+                android:textAllCaps="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sub8" />
+        </android.support.v7.widget.CardView>
+
+    </android.support.constraint.ConstraintLayout>
 
 </android.support.constraint.ConstraintLayout>
+
