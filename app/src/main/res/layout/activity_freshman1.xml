@@ -3,24 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="73dp"
-        android:layout_marginLeft="73dp"
-        android:layout_marginTop="17dp"
-        android:layout_marginEnd="73dp"
-        android:layout_marginRight="73dp"
-        android:layout_marginBottom="29dp"
-        android:text=" FRESHMAN 1 "
-        android:textColor="@android:color/holo_orange_dark"
-        android:textSize="36sp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <Button
         android:id="@+id/btn1"
         android:layout_width="wrap_content"
@@ -87,10 +69,9 @@
         android:id="@+id/descrip"
         android:layout_width="214dp"
         android:layout_height="68dp"
-        android:layout_marginTop="30dp"
         android:layout_marginEnd="52dp"
         android:layout_marginRight="52dp"
         android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/name" />
+        tools:layout_editor_absoluteY="124dp" />
 </android.support.constraint.ConstraintLayout>
