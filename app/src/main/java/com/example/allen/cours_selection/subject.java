@@ -23,6 +23,7 @@ public class subject extends AppCompatActivity implements View.OnClickListener{
     MaterialButton bioeng;
     ArrayList<Course> courselists = new ArrayList<Course>();
     //Course onecourse;
+    MaterialButton back;
 
 
     @SuppressLint("WrongViewCast")
@@ -39,6 +40,7 @@ public class subject extends AppCompatActivity implements View.OnClickListener{
         electro=(MaterialButton)findViewById(R.id.sub3);
         optics=(MaterialButton)findViewById(R.id.sub8);
         bioeng=(MaterialButton)findViewById(R.id.sub6);
+        back = (MaterialButton) findViewById(R.id.back);
 
         digital.setOnClickListener(this);
         computer.setOnClickListener(this);
@@ -46,6 +48,14 @@ public class subject extends AppCompatActivity implements View.OnClickListener{
         electro.setOnClickListener(this);
         optics.setOnClickListener(this);
         bioeng.setOnClickListener(this);
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(subject.this,MainActivity.class);
+                startActivity(i);
+            }
+        });
     }
     private void generateListcontent(String type, String subject) {
         InputStream is = getResources().openRawResource(R.raw.overall_ece_sheet);
