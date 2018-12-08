@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <ImageView
@@ -13,44 +15,54 @@
 
     <android.support.design.button.MaterialButton
         android:id="@+id/btn1"
+        style="@style/Widget.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_marginTop="200dp"
+        android:layout_marginBottom="40dp"
         android:text=" ENG Elective "
         android:textAllCaps="false"
         android:textSize="18sp"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="108dp" />
+        app:layout_constraintBottom_toTopOf="@+id/btn4"
+        app:layout_constraintEnd_toEndOf="@+id/btn4"
+        app:layout_constraintStart_toStartOf="@+id/btn4"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <android.support.design.button.MaterialButton
         android:id="@+id/btn3"
+        style="@style/Widget.Button"
         android:layout_width="144dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
+        android:layout_marginBottom="40dp"
         android:text=" ENG Elective "
         android:textAllCaps="false"
         android:textSize="18sp"
-        tools:layout_editor_absoluteX="108dp"
-        tools:layout_editor_absoluteY="360dp" />
+        app:layout_constraintBottom_toTopOf="@+id/btn2"
+        app:layout_constraintEnd_toEndOf="@+id/btn2"
+        app:layout_constraintStart_toStartOf="@+id/btn2" />
 
     <android.support.design.button.MaterialButton
         android:id="@+id/btn4"
-        style="@style/Widget.MaterialComponents.Button"
+        style="@style/Widget.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
+        android:layout_marginBottom="40dp"
         android:text=" ENG Elective "
         android:textAllCaps="false"
         android:textSize="18sp"
-        tools:layout_editor_absoluteX="108dp"
-        tools:layout_editor_absoluteY="281dp" />
+        app:layout_constraintBottom_toTopOf="@+id/btn3"
+        app:layout_constraintEnd_toEndOf="@+id/btn3"
+        app:layout_constraintStart_toStartOf="@+id/btn3" />
 
     <android.support.design.button.MaterialButton
         android:id="@+id/btn2"
+        style="@style/Widget.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -60,7 +72,6 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="80dp"
-        android:background="@android:color/holo_orange_dark"
         android:text=" General Elevtive "
         android:textAllCaps="false"
         android:textSize="18sp"
@@ -75,9 +86,6 @@
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
         android:layout_marginTop="32dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
-        app:layout_constraintEnd_toStartOf="@+id/msg"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -89,13 +97,10 @@
         android:id="@+id/chatbubble"
         android:layout_width="260dp"
         android:layout_height="100dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/icon"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/chatbubble" />
 
@@ -103,15 +108,14 @@
         android:id="@+id/msg"
         android:layout_width="200dp"
         android:layout_height="67dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginLeft="28dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="68dp"
-        android:layout_marginRight="68dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/id"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="You want to graduate as soon as possible?
+Click, check and confirm on the courses you want to take!"
+        app:layout_constraintBottom_toBottomOf="@+id/chatbubble"
+        app:layout_constraintEnd_toEndOf="@+id/chatbubble"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="@+id/chatbubble"
+        app:layout_constraintTop_toTopOf="@+id/chatbubble"
+        app:layout_constraintVertical_bias="0.484" />
 
     <android.support.design.button.MaterialButton
         android:id="@+id/back"

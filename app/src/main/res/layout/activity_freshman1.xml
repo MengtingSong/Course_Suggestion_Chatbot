@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <ImageView
@@ -28,11 +30,10 @@
     <ImageView
         android:id="@+id/chatbubble"
         android:layout_width="260dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
         app:layout_constraintEnd_toEndOf="@+id/msg"
         app:layout_constraintStart_toEndOf="@+id/icon"
         app:layout_constraintTop_toTopOf="parent"
@@ -41,60 +42,101 @@
     <TextView
         android:id="@+id/descrip"
         android:layout_width="214dp"
-        android:layout_height="68dp"
-        android:layout_marginEnd="52dp"
-        android:layout_marginRight="52dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="124dp" />
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Wow! A promising engineer! Do you want a data? I'm available!
+Oh, you only want to know about the courses...What a pity! OK. Just click on the course buttons."
+        app:layout_constraintBottom_toBottomOf="@+id/chatbubble"
+        app:layout_constraintEnd_toEndOf="@+id/chatbubble"
+        app:layout_constraintStart_toStartOf="@+id/chatbubble"
+        app:layout_constraintTop_toTopOf="@+id/chatbubble" />
 
-    <Button
+    <android.support.design.button.MaterialButton
         android:id="@+id/btn1"
+        style="@style/Widget.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="138dp"
-        android:layout_marginLeft="138dp"
-        android:layout_marginTop="43dp"
-        android:layout_marginEnd="136dp"
-        android:layout_marginRight="136dp"
-        android:background="@android:color/holo_orange_dark"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="21dp"
         android:text=" CAS MA 123 "
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/descrip" />
-    <Button
+        app:layout_constraintBottom_toTopOf="@+id/btn3"
+        app:layout_constraintEnd_toEndOf="@+id/btn3"
+        app:layout_constraintStart_toStartOf="@+id/btn3"
+        app:layout_constraintTop_toBottomOf="@+id/chatbubble" />
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/btn2"
+        style="@style/Widget.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="22dp"
         android:text=" ENG EK 100 "
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" android:id="@+id/btn2"
+        android:textAllCaps="false"
         android:textSize="18sp"
-        app:layout_constraintTop_toBottomOf="@+id/btn1" app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/btn3" android:background="@android:color/holo_orange_dark"/>
-    <Button
+        app:layout_constraintBottom_toTopOf="@+id/btn5"
+        app:layout_constraintEnd_toEndOf="@+id/btn5"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="@+id/btn5" />
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/btn3"
+        style="@style/Widget.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="21dp"
         android:text=" CAS CH 131 "
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" android:id="@+id/btn3"
+        android:textAllCaps="false"
         android:textSize="18sp"
-        app:layout_constraintTop_toBottomOf="@+id/btn2" app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/btn4" android:background="@android:color/holo_orange_dark"/>
-    <Button
+        app:layout_constraintBottom_toTopOf="@+id/btn4"
+        app:layout_constraintEnd_toEndOf="@+id/btn4"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/btn4" />
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/btn4"
+        style="@style/Widget.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="21dp"
         android:text=" ENG EK 127 "
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" android:id="@+id/btn4"
+        android:textAllCaps="false"
         android:textSize="18sp"
-        app:layout_constraintTop_toBottomOf="@+id/btn3" app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/btn5" android:background="@android:color/holo_orange_dark"/>
-    <Button
+        app:layout_constraintBottom_toTopOf="@+id/btn2"
+        app:layout_constraintEnd_toEndOf="@+id/btn2"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toEndOf="@+id/btn5"
+        app:layout_constraintStart_toStartOf="@+id/btn2" />
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/btn5"
+        style="@style/Widget.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="60dp"
         android:text=" CAS WR 120 "
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" android:id="@+id/btn5"
+        android:textAllCaps="false"
         android:textSize="18sp"
-        app:layout_constraintTop_toBottomOf="@+id/btn4" app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
-        android:background="@android:color/holo_orange_dark"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn1"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <android.support.design.button.MaterialButton
         android:id="@+id/back"
