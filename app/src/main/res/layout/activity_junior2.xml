@@ -11,46 +11,62 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/bar3" />
 
-    <Button
+    <android.support.design.button.MaterialButton
         android:id="@+id/btn1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="114dp"
-        android:layout_marginLeft="114dp"
-        android:layout_marginTop="18dp"
-        android:layout_marginEnd="113dp"
-        android:layout_marginRight="113dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="200dp"
+        android:text=" ENG Elective "
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="108dp" />
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/btn3"
+        android:layout_width="144dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text=" ENG Elective "
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="108dp"
+        tools:layout_editor_absoluteY="360dp" />
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/btn4"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text=" ENG Elective "
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="108dp"
+        tools:layout_editor_absoluteY="281dp" />
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="80dp"
         android:background="@android:color/holo_orange_dark"
-        android:text=" EE BREADTH ELE. "
+        android:text=" General Elevtive "
+        android:textAllCaps="false"
         android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/msg" />
-    <Button
-        android:text=" COMPUTER ENG ELE. "
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" android:id="@+id/btn2"
-        android:textSize="18sp"
-        app:layout_constraintTop_toBottomOf="@+id/btn1" app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/btn3" android:background="@android:color/holo_orange_dark"/>
-    <Button
-        android:text=" CE CORE ELE. "
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" android:id="@+id/btn3"
-        android:textSize="18sp"
-        app:layout_constraintTop_toBottomOf="@+id/btn2" app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/btn4" android:background="@android:color/holo_orange_dark"/>
-    <Button
-        android:text=" HUMANITIES ELE."
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" android:id="@+id/btn4"
-        android:textSize="18sp"
-        app:layout_constraintTop_toBottomOf="@+id/btn3" app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:background="@android:color/holo_orange_dark"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/icon"
@@ -72,16 +88,16 @@
     <ImageView
         android:id="@+id/chatbubble"
         android:layout_width="260dp"
-        android:layout_height="147dp"
+        android:layout_height="100dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        app:layout_constraintEnd_toEndOf="@+id/msg"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/icon"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/chatbubble" />
-
 
     <TextView
         android:id="@+id/msg"
@@ -96,4 +112,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/id"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/back"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:background="@android:color/holo_green_light"
+        android:text=" << Balck to Grade Selection "
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textColorLink="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
 </android.support.constraint.ConstraintLayout>

@@ -19,7 +19,6 @@ public class Senior2 extends AppCompatActivity implements View.OnClickListener{
     MaterialButton sub3;
     MaterialButton sub4;
 
-
     TextView txt1;
 
     Course thecourse = new Course();
@@ -104,7 +103,7 @@ public class Senior2 extends AppCompatActivity implements View.OnClickListener{
             }
             case R.id.btn3: {
                 Intent courseinforintent = new Intent(this, Courseinfor.class);
-                readCourselist("CAS MA 123");
+                readCourselist("ENG EC 464");
                 courseinforintent.putExtra("MyClass", thecourse);
                 startActivity(courseinforintent);
                 break;

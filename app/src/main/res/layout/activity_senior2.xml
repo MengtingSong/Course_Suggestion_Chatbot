@@ -9,13 +9,18 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginTop="60dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
         android:layout_marginBottom="13dp"
-        android:textSize="18sp"
         android:text=" ENG Elective "
         android:textAllCaps="false"
+        android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/btn2"
-        app:layout_constraintStart_toStartOf="@+id/btn2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/chatbubble" />
 
     <android.support.design.button.MaterialButton
@@ -25,13 +30,18 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
         android:layout_marginBottom="13dp"
         android:text=" ENG Elective "
         android:textAllCaps="false"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/btn3"
-        app:layout_constraintStart_toStartOf="@+id/btn3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bar" />
 
     <android.support.design.button.MaterialButton
@@ -40,12 +50,17 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
         android:layout_marginBottom="13dp"
-        android:text=" ENG Elective "
+        android:text=" ENG EC 464 "
         android:textAllCaps="false"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/btn4"
-        app:layout_constraintStart_toStartOf="@+id/btn4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn2" />
 
     <android.support.design.button.MaterialButton
@@ -61,6 +76,7 @@
         android:layout_marginBottom="60dp"
         android:background="@android:color/holo_orange_dark"
         android:text=" General Elevtive "
+        android:textAllCaps="false"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -69,7 +85,7 @@
     <ImageView
         android:id="@+id/bar"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="166dp"
         android:layout_marginTop="80dp"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/bar3" />
@@ -81,9 +97,6 @@
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
         android:layout_marginTop="32dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
-        app:layout_constraintEnd_toStartOf="@+id/msg"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -94,27 +107,40 @@
     <ImageView
         android:id="@+id/chatbubble"
         android:layout_width="260dp"
-        android:layout_height="147dp"
+        android:layout_height="100dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        app:layout_constraintEnd_toEndOf="@+id/msg"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/icon"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/icon"
         app:srcCompat="@drawable/chatbubble" />
 
     <TextView
         android:id="@+id/msg"
-        android:layout_width="176dp"
-        android:layout_height="68dp"
-        android:layout_marginTop="8dp"
-        android:text="Welcome to your last semester of your undergraduate!
-You can see the light at the end of the turnnel!
-What do you want to know about the courses?"
+        android:layout_width="200dp"
+        android:layout_height="90dp"
+        android:text="Yay! Last semester!!!
+You can see the light at the end of the tunnel! You have more freedom to choose elective courses now!"
         app:layout_constraintBottom_toBottomOf="@+id/chatbubble"
-        app:layout_constraintEnd_toEndOf="@+id/chatbubble"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
         app:layout_constraintStart_toStartOf="@+id/chatbubble"
-        app:layout_constraintTop_toTopOf="@+id/chatbubble" />
+        app:layout_constraintTop_toTopOf="@+id/chatbubble"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/back"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:background="@android:color/holo_green_light"
+        android:text=" << Balck to Grade Selection "
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textColorLink="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

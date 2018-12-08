@@ -107,12 +107,24 @@
         android:id="@+id/msg"
         android:layout_width="176dp"
         android:layout_height="68dp"
-        android:layout_marginTop="8dp"
         android:text="Congratulations! You are a sophomore now!
 Click on the courses to see more details!"
         app:layout_constraintBottom_toBottomOf="@+id/chatbubble"
         app:layout_constraintEnd_toEndOf="@+id/chatbubble"
         app:layout_constraintStart_toStartOf="@+id/chatbubble"
         app:layout_constraintTop_toTopOf="@+id/chatbubble" />
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/back"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:background="@android:color/holo_green_light"
+        android:text=" << Balck to Grade Selection "
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textColorLink="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
