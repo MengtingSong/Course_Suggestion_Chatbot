@@ -60,126 +60,113 @@ Tell me which is your next semester, then I will show you the courses you may wa
 
     <android.support.design.button.MaterialButton
         android:id="@+id/btn1"
-        style="@style/Widget.MaterialComponents.Button.TextButton"
+        style="@style/Widget.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="64dp"
-        android:layout_marginBottom="32dp"
-        android:background="@android:color/holo_green_light"
-        android:textSize="14sp"
-        android:text=" FRESHMAN 1 "
-        android:textColor="@color/colorPrimary"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:text=" Freshman 1 "
+        android:textAllCaps="false"
         android:textColorLink="@color/colorPrimaryDark"
-        app:layout_constraintBottom_toTopOf="@+id/btn3"
+        android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/msg" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
 
 
     <android.support.design.button.MaterialButton
         android:id="@+id/btn2"
-        style="@style/Widget.MaterialComponents.Button.TextButton"
-        android:layout_width="wrap_content"
+        style="@style/Widget.Button"
+        android:layout_width="115dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
-        android:layout_marginBottom="32dp"
-        android:background="@android:color/holo_green_light"
-        android:text=" FRESHMAN 2 "
-        android:textColor="@color/colorPrimary"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text=" Freshman 2 "
+        android:textAllCaps="false"
         android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/btn4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/btn4"
-        app:layout_constraintTop_toTopOf="@+id/btn1"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintStart_toEndOf="@+id/btn1"
+        app:layout_constraintTop_toTopOf="@+id/btn1" />
 
     <android.support.design.button.MaterialButton
         android:id="@+id/btn3"
-        style="@style/Widget.MaterialComponents.Button.TextButton"
+        style="@style/Widget.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginBottom="32dp"
-        android:background="@android:color/holo_green_light"
-        android:text=" SOPHOMORE 1 "
-        android:textColor="@color/colorPrimary"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text=" Sophomore 1 "
+        android:textAllCaps="false"
         android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/btn5"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/btn4"
+        app:layout_constraintTop_toTopOf="@+id/btn4" />
 
     <android.support.design.button.MaterialButton
         android:id="@+id/btn4"
-        style="@style/Widget.MaterialComponents.Button.TextButton"
+        style="@style/Widget.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:background="@android:color/holo_green_light"
-        android:text=" SOPHOMORE 2 "
-        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text=" Sophomore 2 "
+        android:textAllCaps="false"
         android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/btn6"
-        app:layout_constraintStart_toStartOf="@+id/btn6" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn2" />
 
     <android.support.design.button.MaterialButton
         android:id="@+id/btn5"
-        style="@style/Widget.MaterialComponents.Button.TextButton"
+        style="@style/Widget.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginBottom="32dp"
-        android:background="@android:color/holo_green_light"
-        android:text=" JUNIOR 1 "
-        android:textColor="@color/colorPrimary"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="40dp"
+        android:text=" Junior 1 "
+        android:textAllCaps="false"
         android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/btn7"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn3" />
 
     <android.support.design.button.MaterialButton
         android:id="@+id/btn6"
-        style="@style/Widget.MaterialComponents.Button.TextButton"
+        style="@style/Widget.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:background="@android:color/holo_green_light"
-        android:text=" JUNIOR 2 "
-        android:textColor="@color/colorPrimary"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text=" Junior 2 "
+        android:textAllCaps="false"
         android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/btn8"
-        app:layout_constraintStart_toStartOf="@+id/btn8" />
+        app:layout_constraintStart_toEndOf="@+id/btn5"
+        app:layout_constraintTop_toTopOf="@+id/btn5" />
 
     <android.support.design.button.MaterialButton
         android:id="@+id/btn7"
-        style="@style/Widget.MaterialComponents.Button.TextButton"
+        style="@style/Widget.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginBottom="100dp"
-        android:background="@android:color/holo_green_light"
-        android:text=" SENIOR 1 "
-        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text=" Senior 1 "
+        android:textAllCaps="false"
         android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/btn8"
+        app:layout_constraintTop_toBottomOf="@+id/btn5" />
 
     <android.support.design.button.MaterialButton
         android:id="@+id/btn8"
-        style="@style/Widget.MaterialComponents.Button.TextButton"
+        style="@style/Widget.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="62dp"
-        android:layout_marginRight="62dp"
-        android:layout_marginBottom="100dp"
-        android:background="@android:color/holo_green_light"
-        android:textColor="@color/colorPrimary"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text=" Seniro 2 "
+        android:textAllCaps="false"
         android:textSize="14sp"
-        android:text=" SENIOR 2 "
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn7" />
 
 
 </android.support.constraint.ConstraintLayout>

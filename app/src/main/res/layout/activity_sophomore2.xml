@@ -7,6 +7,7 @@
 
     <android.support.design.button.MaterialButton
         android:id="@+id/btn1"
+        style="@style/Widget.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -19,7 +20,7 @@
 
     <android.support.design.button.MaterialButton
         android:id="@+id/btn2"
-        style="@style/Widget.MaterialComponents.Button"
+        style="@style/Widget.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -34,6 +35,7 @@
 
     <android.support.design.button.MaterialButton
         android:id="@+id/btn3"
+        style="@style/Widget.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -47,12 +49,12 @@
 
     <android.support.design.button.MaterialButton
         android:id="@+id/btn4"
+        style="@style/Widget.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_marginBottom="23dp"
-        android:background="@android:color/holo_orange_dark"
         android:text=" ENG EK 210 "
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/btn5"
@@ -61,12 +63,12 @@
 
     <android.support.design.button.MaterialButton
         android:id="@+id/btn5"
+        style="@style/Widget.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_marginBottom="40dp"
-        android:background="@android:color/holo_orange_dark"
         android:text=" ENG EC 330 "
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -101,9 +103,9 @@
 
     <ImageView
         android:id="@+id/chatbubble"
-        android:layout_width="260dp"
-        android:layout_height="90dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="280dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -113,14 +115,16 @@
 
     <TextView
         android:id="@+id/msg"
-        android:layout_width="179dp"
-        android:layout_height="68dp"
-        android:text="Welcome to the second semester of Sophomore!
-Click on the courses to see more details!"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:text="Click on the courses to see more details!
+Hey, have you decided on what you want to do in the future? No! Then think! I don't want to here the same answer next semester!"
         app:layout_constraintBottom_toBottomOf="@+id/chatbubble"
         app:layout_constraintEnd_toEndOf="@+id/chatbubble"
+        app:layout_constraintHorizontal_bias="0.65"
         app:layout_constraintStart_toStartOf="@+id/chatbubble"
-        app:layout_constraintTop_toTopOf="@+id/chatbubble" />
+        app:layout_constraintTop_toTopOf="@+id/chatbubble"
+        app:layout_constraintVertical_bias="0.615" />
 
 
     <android.support.design.button.MaterialButton

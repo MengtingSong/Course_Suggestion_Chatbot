@@ -10,9 +10,33 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/bar3"
-        tools:layout_editor_absoluteX="0dp" />
+        app:srcCompat="@drawable/bar3" />
+
+    <ImageView
+        android:id="@+id/chatbubble"
+        android:layout_width="260dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/chatbubble" />
+
+    <TextView
+        android:id="@+id/msg"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:text="Tada! Here is all the details of this course!
+Is it like magic? Yes! It is! I am so AWESOME!"
+        app:layout_constraintBottom_toBottomOf="@+id/chatbubble"
+        app:layout_constraintEnd_toEndOf="@+id/chatbubble"
+        app:layout_constraintHorizontal_bias="0.58"
+        app:layout_constraintStart_toStartOf="@+id/chatbubble"
+        app:layout_constraintTop_toTopOf="@+id/chatbubble"
+        app:layout_constraintVertical_bias="0.516" />
 
     <ImageView
         android:id="@+id/icon"
@@ -21,9 +45,6 @@
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
         android:layout_marginTop="32dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
-        app:layout_constraintEnd_toStartOf="@+id/msg"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -31,181 +52,147 @@
         tools:layout_conversion_absoluteHeight="50dp"
         tools:layout_conversion_absoluteWidth="50dp" />
 
-    <ImageView
-        android:id="@+id/chatbubble"
-        android:layout_width="260dp"
-        android:layout_height="147dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        app:layout_constraintEnd_toEndOf="@+id/msg"
-        app:layout_constraintStart_toEndOf="@+id/icon"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/chatbubble" />
-
-    <android.support.v7.widget.CardView
-        android:layout_width="108dp"
-        android:layout_height="57dp"
-        tools:layout_editor_absoluteX="44dp"
-        tools:layout_editor_absoluteY="200dp">
-
-        <TextView
-            android:id="@+id/code1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Course Code"
-            android:textColor="@color/colorAccent"
-            android:textStyle="bold"
-            tools:layout_editor_absoluteX="44dp"
-            tools:layout_editor_absoluteY="181dp" />
-
-        <TextView
-            android:id="@+id/code"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TextView"
-            tools:layout_editor_absoluteX="76dp"
-            tools:layout_editor_absoluteY="193dp" />
-
-    </android.support.v7.widget.CardView>
-
-
-    <android.support.v7.widget.CardView
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/code1"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="61dp"
-        tools:layout_editor_absoluteY="326dp">
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="16dp"
+        android:text="Course Code"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/code"
+        app:layout_constraintEnd_toStartOf="@+id/name1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/code"
+        app:layout_constraintTop_toTopOf="@+id/name1"
+        app:layout_constraintVertical_bias="0.0" />
 
-        <TextView
-            android:id="@+id/name1"
-            android:layout_width="100dp"
-            android:layout_height="18dp"
-            android:layout_marginStart="27dp"
-            android:layout_marginLeft="27dp"
-            android:layout_marginTop="58dp"
-            android:layout_marginBottom="33dp"
-            android:text="Course Name"
-            android:textColor="@color/colorAccent"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/code1"
-            app:layout_constraintStart_toEndOf="@+id/code1"
-            app:layout_constraintTop_toTopOf="@+id/code1"
-            app:layout_constraintVertical_bias="0.651"
-            app:layout_constraintVertical_chainStyle="spread_inside" />
-
-        <TextView
-            android:id="@+id/name"
-            android:layout_width="85dp"
-            android:layout_height="18dp"
-            android:text="TextView"
-            tools:layout_editor_absoluteX="197dp"
-            tools:layout_editor_absoluteY="194dp" />
-    </android.support.v7.widget.CardView>
-
-
-    <android.support.v7.widget.CardView
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/code"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="43dp"
-        tools:layout_editor_absoluteY="293dp">
-
-        <TextView
-            android:id="@+id/credits1"
-            android:layout_width="70dp"
-            android:layout_height="22dp"
-            android:text="Credits"
-            android:textColor="@color/colorAccent"
-            android:textStyle="bold"
-            tools:layout_editor_absoluteX="57dp"
-            tools:layout_editor_absoluteY="237dp" />
-
-        <TextView
-            android:id="@+id/credits"
-            android:layout_width="70dp"
-            android:layout_height="22dp"
-            android:text="TextView"
-            tools:layout_editor_absoluteX="49dp"
-            tools:layout_editor_absoluteY="304dp" />
-    </android.support.v7.widget.CardView>
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/pre1"
+        app:layout_constraintTop_toBottomOf="@+id/code1" />
 
 
-    <android.support.v7.widget.CardView
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/name1"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="24dp"
-        tools:layout_editor_absoluteY="303dp">
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginBottom="8dp"
+        android:text="Course Name"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/name"
+        app:layout_constraintEnd_toStartOf="@+id/credits1"
+        app:layout_constraintTop_toTopOf="@+id/credits1"
+        app:layout_constraintVertical_bias="0.0" />
 
-        <TextView
-            android:id="@+id/pre"
-            android:layout_width="71dp"
-            android:layout_height="23dp"
-            android:text="TextView"
-            tools:layout_editor_absoluteX="126dp"
-            tools:layout_editor_absoluteY="259dp" />
-
-        <TextView
-            android:id="@+id/pre1"
-            android:layout_width="71dp"
-            android:layout_height="23dp"
-            android:text="Pre-Req"
-            android:textColor="@color/colorAccent"
-            android:textStyle="bold"
-            tools:layout_editor_absoluteX="126dp"
-            tools:layout_editor_absoluteY="192dp" />
-    </android.support.v7.widget.CardView>
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="85dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/name1"
+        app:layout_constraintTop_toBottomOf="@+id/name1" />
 
 
-    <android.support.v7.widget.CardView
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/credits1"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="92dp"
-        tools:layout_editor_absoluteY="326dp">
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="8dp"
+        android:text="Credits"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/credits"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chatbubble"
+        app:layout_constraintVertical_bias="1.0" />
 
-        <TextView
-            android:id="@+id/future"
-            android:layout_width="83dp"
-            android:layout_height="23dp"
-            android:text="TextView"
-            tools:layout_editor_absoluteX="221dp"
-            tools:layout_editor_absoluteY="215dp" />
-
-        <TextView
-            android:id="@+id/future1"
-            android:layout_width="83dp"
-            android:layout_height="23dp"
-            android:text="Options"
-            android:textColor="@color/colorAccent"
-            android:textStyle="bold"
-            tools:layout_editor_absoluteX="221dp"
-            tools:layout_editor_absoluteY="148dp" />
-    </android.support.v7.widget.CardView>
+    <TextView
+        android:id="@+id/credits"
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="24dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/bar"
+        app:layout_constraintStart_toStartOf="@+id/credits1" />
 
 
-    <android.support.v7.widget.CardView
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/pre"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="120dp"
-        tools:layout_editor_absoluteY="349dp">
+        android:layout_marginBottom="15dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/future1"
+        app:layout_constraintStart_toStartOf="@+id/future1" />
 
-        <TextView
-            android:id="@+id/discrip1"
-            android:layout_width="150dp"
-            android:layout_height="18dp"
-            android:text="Course Description"
-            android:textColor="@color/colorAccent"
-            android:textStyle="bold"
-            tools:layout_editor_absoluteX="57dp"
-            tools:layout_editor_absoluteY="213dp" />
+    <TextView
+        android:id="@+id/pre1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Prerequisite"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/pre"
+        app:layout_constraintStart_toStartOf="@+id/pre" />
 
-        <TextView
-            android:id="@+id/discrip"
-            android:layout_width="275dp"
-            android:layout_height="180dp"
-            android:text="TextView"
-            tools:layout_editor_absoluteX="41dp"
-            tools:layout_editor_absoluteY="371dp" />
-    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/future"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="27dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/discrip1"
+        app:layout_constraintStart_toStartOf="@+id/discrip1" />
+
+    <TextView
+        android:id="@+id/future1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:text="Future Courses"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/future"
+        app:layout_constraintStart_toStartOf="@+id/future" />
+
+
+    <TextView
+        android:id="@+id/discrip1"
+        android:layout_width="150dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="3dp"
+        android:text="Course Description"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/discrip"
+        app:layout_constraintStart_toStartOf="@+id/discrip" />
+
+    <TextView
+        android:id="@+id/discrip"
+        android:layout_width="275dp"
+        android:layout_height="135dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="32dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <android.support.design.button.MaterialButton
         android:id="@+id/back"
