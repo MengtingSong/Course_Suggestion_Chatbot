@@ -1,11 +1,11 @@
 package com.example.allen.cours_selection;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.design.button.MaterialButton;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 
 import java.io.BufferedReader;
@@ -13,10 +13,10 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 public class Sophomore1 extends AppCompatActivity implements View.OnClickListener {
-    Button sub1;
-    Button sub2;
-    Button sub3;
-    Button sub4;
+    MaterialButton sub1;
+    MaterialButton sub2;
+    MaterialButton sub3;
+    MaterialButton sub4;
 
     TextView txt1;
     Course thecourse=new Course();
@@ -26,10 +26,10 @@ public class Sophomore1 extends AppCompatActivity implements View.OnClickListene
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sophomore1);
 
-        sub1 = (Button) findViewById(R.id.btn1);
-        sub2 = (Button) findViewById(R.id.btn2);
-        sub3 = (Button) findViewById(R.id.btn3);
-        sub4 = (Button) findViewById(R.id.btn4);
+        sub1 = (MaterialButton) findViewById(R.id.btn1);
+        sub2 = (MaterialButton) findViewById(R.id.btn2);
+        sub3 = (MaterialButton) findViewById(R.id.btn3);
+        sub4 = (MaterialButton) findViewById(R.id.btn4);
 
 
         txt1 = (TextView) findViewById(R.id.msg);

@@ -1,13 +1,13 @@
 package com.example.allen.cours_selection;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.design.button.MaterialButton;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.ScrollView;
 
 public class engelective extends AppCompatActivity implements View.OnClickListener{
 
@@ -16,9 +16,9 @@ public class engelective extends AppCompatActivity implements View.OnClickListen
     Button opt3;
     Button opt4;
 
-
     ImageView icon;
     TextView msg;
+    MaterialButton back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

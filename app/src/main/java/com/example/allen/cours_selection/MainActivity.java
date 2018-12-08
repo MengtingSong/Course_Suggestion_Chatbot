@@ -5,22 +5,10 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.design.button.MaterialButton;
-import android.support.design.widget.TextInputEditText;
-import android.support.design.widget.TextInputLayout;
-import android.text.Editable;
-import android.view.KeyEvent;
-import android.view.LayoutInflater;
-import android.view.ViewGroup;
 
 //MT: Add BUID check function as below to the login page after setting it as the mainActivity
-/*private boolean isPasswordValid(@Nullable Editable text) {
-    return text.length() == 9;
-}
-*/
 //Next, add a click listener to the "Next" button that sets and clears the error based on the isPasswordValid() method
+//See LoginFragment_FR.java for reference
 
 //extends AppCompatActivity or Activity???? MT: extends from AppCompatActivity
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
