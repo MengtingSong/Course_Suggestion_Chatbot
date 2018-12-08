@@ -6,6 +6,7 @@ import android.support.design.button.MaterialButton;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import java.io.BufferedReader;
@@ -19,6 +20,8 @@ public class Sophomore2 extends AppCompatActivity implements View.OnClickListene
     MaterialButton sub3;
     MaterialButton sub4;
     MaterialButton sub5;
+    MaterialButton back;
+
 
     TextView txt1;
 
@@ -33,6 +36,7 @@ public class Sophomore2 extends AppCompatActivity implements View.OnClickListene
         sub3 = (MaterialButton) findViewById(R.id.btn3);
         sub4 = (MaterialButton) findViewById(R.id.btn4);
         sub5 = (MaterialButton) findViewById(R.id.btn5);
+        back = (MaterialButton) findViewById(R.id.back);
 
         txt1 = (TextView) findViewById(R.id.msg);
 
@@ -45,6 +49,13 @@ public class Sophomore2 extends AppCompatActivity implements View.OnClickListene
         sub4.setOnClickListener(this);
 
         sub5.setOnClickListener(this);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Sophomore2.this,MainActivity.class);
+                startActivity(i);
+            }
+        });
     }
 
     public void readCourselist(String coursecode) {
@@ -135,6 +146,7 @@ public class Sophomore2 extends AppCompatActivity implements View.OnClickListene
             }
         }
     }
+
 }
 
 
