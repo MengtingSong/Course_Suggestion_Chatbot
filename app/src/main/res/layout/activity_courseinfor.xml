@@ -207,4 +207,17 @@
             tools:layout_editor_absoluteY="371dp" />
     </android.support.v7.widget.CardView>
 
+    <android.support.design.button.MaterialButton
+        android:id="@+id/back"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:background="@android:color/holo_green_light"
+        android:text=" Back to Grade Selection "
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textColorLink="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
 </android.support.constraint.ConstraintLayout>

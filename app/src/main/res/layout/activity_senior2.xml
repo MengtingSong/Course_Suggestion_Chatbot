@@ -136,7 +136,7 @@ You can see the light at the end of the tunnel! You have more freedom to choose 
         android:layout_width="wrap_content"
         android:layout_height="37dp"
         android:background="@android:color/holo_green_light"
-        android:text=" << Balck to Grade Selection "
+        android:text=" Back to Grade Selection "
         android:textAllCaps="false"
         android:textColor="@color/colorPrimary"
         android:textColorLink="@color/colorPrimaryDark"

@@ -3,7 +3,6 @@ package com.example.allen.cours_selection;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.button.MaterialButton;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -27,7 +26,6 @@ public class engelelist extends AppCompatActivity{
     //String subject;
     Course thecourse = new Course();
 
-    MaterialButton back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

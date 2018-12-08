@@ -2,8 +2,10 @@
 <android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
     <ImageView
         android:id="@+id/bar"
         android:layout_width="wrap_content"
@@ -84,7 +86,7 @@ Click on the courses to see more details!"
         android:layout_width="wrap_content"
         android:layout_height="37dp"
         android:background="@android:color/holo_green_light"
-        android:text=" << Balck to Grade Selection "
+        android:text=" Back to Grade Selection "
         android:textAllCaps="false"
         android:textColor="@color/colorPrimary"
         android:textColorLink="@color/colorPrimaryDark"
