@@ -24,7 +24,7 @@ public class engelelist extends AppCompatActivity{
     ListView courselist;
     ArrayList<Course> courselists = new ArrayList<Course>();
     String type;
-    //String subject;
+    String subject;
     Course thecourse = new Course();
 
     MaterialButton back;
@@ -35,7 +35,7 @@ public class engelelist extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_engelelist);
         Intent i = getIntent();
-        //subject = (String) i.getStringExtra("subject");
+        subject = (String) i.getStringExtra("subject");
         type = (String) i.getStringExtra("electivename");
         courselist = (ListView) findViewById(R.id.courselist);
         generateListcontent(type);
@@ -107,7 +107,7 @@ public class engelelist extends AppCompatActivity{
                 int i=0;
                 String[] token = line.split((","));
                 //read the data
-                if (token[2].equals(type)) {
+                if (token[2].equals(type) && token[7].equals(subject)) {
                     Course onecourse = new Course();
                     onecourse.setCode(token[0]);
                     onecourse.setName(token[1]);
