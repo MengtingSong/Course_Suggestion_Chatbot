@@ -1,9 +1,8 @@
 package com.example.allen.cours_selection;
 
 import android.content.Intent;
-import android.media.Image;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
 
 public class generaltemp extends AppCompatActivity {

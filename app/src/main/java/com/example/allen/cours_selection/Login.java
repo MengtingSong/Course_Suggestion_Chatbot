@@ -1,11 +1,9 @@
 package com.example.allen.cours_selection;
 
 import android.content.Intent;
-import android.icu.text.IDNA;
-import android.support.design.widget.TextInputEditText;
+import android.os.Bundle;
 import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -37,7 +35,7 @@ public class Login extends AppCompatActivity {
 
                 Intent i = new Intent(Login.this, MainActivity.class);
                 startActivity(i);
-                //validate(id.getText().toString());
+                validate(id.getText().toString());
             }
         });
 
@@ -56,7 +54,7 @@ public class Login extends AppCompatActivity {
         }
         else
         {
-            info.setError("Enter a valid BU ID!");
+            info.setError("Please enter a valid BU ID!");
             next.setEnabled(false);
             return false;
         }
