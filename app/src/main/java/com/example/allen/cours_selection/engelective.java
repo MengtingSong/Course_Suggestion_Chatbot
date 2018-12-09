@@ -16,6 +16,7 @@ public class engelective extends AppCompatActivity implements View.OnClickListen
     Button opt3;
     Button opt4;
 
+
     ImageView icon;
     TextView msg;
     MaterialButton back;
@@ -33,12 +34,23 @@ public class engelective extends AppCompatActivity implements View.OnClickListen
         icon = (ImageView)findViewById(R.id.icon);
         msg = (TextView)findViewById(R.id.msg);
 
+        back = (MaterialButton) findViewById(R.id.back);
+
         opt1.setOnClickListener(this);
         opt2.setOnClickListener(this);
 
         opt3.setOnClickListener(this);
 
         opt4.setOnClickListener(this);
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(engelective.this,MainActivity.class);
+                startActivity(i);
+            }
+        });
+
     }
 
     @Override

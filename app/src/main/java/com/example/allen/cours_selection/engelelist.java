@@ -3,6 +3,7 @@ package com.example.allen.cours_selection;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.button.MaterialButton;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -26,6 +27,8 @@ public class engelelist extends AppCompatActivity{
     //String subject;
     Course thecourse = new Course();
 
+    MaterialButton back;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +39,8 @@ public class engelelist extends AppCompatActivity{
         type = (String) i.getStringExtra("electivename");
         courselist = (ListView) findViewById(R.id.courselist);
         generateListcontent(type);
+
+        back = (MaterialButton) findViewById(R.id.back);
 
         Log.d("Myactivity", "here!!!!!!!!!!!!!!!!!!!!!");
         //Log.d("Myactivity", type);
@@ -51,6 +56,14 @@ public class engelelist extends AppCompatActivity{
                     Intent intent = new Intent(engelelist.this, Courseinfor.class);
                     intent.putExtra("MyClass", courselists.get(pos));
                     startActivity(intent);
+            }
+        });
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(engelelist.this,MainActivity.class);
+                startActivity(i);
             }
         });
        // courselist.setAdapter(customAdaptor);

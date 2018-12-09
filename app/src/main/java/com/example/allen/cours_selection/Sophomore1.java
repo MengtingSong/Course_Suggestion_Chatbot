@@ -17,6 +17,7 @@ public class Sophomore1 extends AppCompatActivity implements View.OnClickListene
     MaterialButton sub2;
     MaterialButton sub3;
     MaterialButton sub4;
+    MaterialButton back;
 
     TextView txt1;
     Course thecourse=new Course();
@@ -30,6 +31,7 @@ public class Sophomore1 extends AppCompatActivity implements View.OnClickListene
         sub2 = (MaterialButton) findViewById(R.id.btn2);
         sub3 = (MaterialButton) findViewById(R.id.btn3);
         sub4 = (MaterialButton) findViewById(R.id.btn4);
+        back = (MaterialButton) findViewById(R.id.back);
 
 
         txt1 = (TextView) findViewById(R.id.msg);
@@ -41,6 +43,14 @@ public class Sophomore1 extends AppCompatActivity implements View.OnClickListene
         sub3.setOnClickListener(this);
 
         sub4.setOnClickListener(this);
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Sophomore1.this,MainActivity.class);
+                startActivity(i);
+            }
+        });
 
 
 
