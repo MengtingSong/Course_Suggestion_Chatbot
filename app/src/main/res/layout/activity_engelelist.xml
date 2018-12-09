@@ -21,32 +21,30 @@
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
         android:layout_marginTop="32dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
-        app:layout_constraintEnd_toStartOf="@+id/msg"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/ic_launcher"
+        app:srcCompat="@drawable/icon"
         tools:layout_conversion_absoluteHeight="50dp"
         tools:layout_conversion_absoluteWidth="50dp" />
 
     <ImageView
         android:id="@+id/chatbubble"
         android:layout_width="260dp"
-        android:layout_height="80dp"
+        android:layout_height="100dp"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/chatbubble" />
 
     <TextView
         android:id="@+id/msg"
-        android:layout_width="160dp"
+        android:layout_width="170dp"
         android:layout_height="wrap_content"
-        android:text="These are all the courses of this subject under that branch."
+        android:text="These are all the courses of this subject under that branch.
+Click on each course for more details!"
         app:layout_constraintBottom_toBottomOf="@+id/chatbubble"
         app:layout_constraintEnd_toEndOf="@+id/chatbubble"
         app:layout_constraintStart_toStartOf="@+id/chatbubble"

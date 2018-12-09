@@ -45,8 +45,8 @@
 
     <android.support.design.button.MaterialButton
         android:id="@+id/btn3"
-        android:layout_width="144dp"
         style="@style/Widget.Button"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
@@ -104,7 +104,7 @@
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/ic_launcher"
+        app:srcCompat="@drawable/icon"
         tools:layout_conversion_absoluteHeight="50dp"
         tools:layout_conversion_absoluteWidth="50dp" />
 
