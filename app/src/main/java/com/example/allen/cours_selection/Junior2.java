@@ -98,7 +98,7 @@ public class Junior2 extends AppCompatActivity implements View.OnClickListener{
                 break;
             }
 
-            case R.id.btn2: {
+            case R.id.btn4: {
                 Intent courseelectiveintent = new Intent(this, engelective.class);
                 startActivity(courseelectiveintent);
                 break;
@@ -108,7 +108,7 @@ public class Junior2 extends AppCompatActivity implements View.OnClickListener{
                 startActivity(courseelectiveintent);
                 break;
             }
-            case R.id.btn4: {
+            case R.id.btn2: {
                 Intent generalelective = new Intent(this, generalelective.class);
                 startActivity(generalelective);
                 break;
