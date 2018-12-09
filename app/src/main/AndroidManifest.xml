@@ -33,6 +33,8 @@
         <activity android:name=".subject" > </activity>
         <activity android:name=".generalelective" > </activity>
         <activity android:name=".engelelist" > </activity>
+        <activity android:name=".empty"></activity>
+        <activity android:name=".generaltemp"></activity>
     </application>
 
 </manifest>

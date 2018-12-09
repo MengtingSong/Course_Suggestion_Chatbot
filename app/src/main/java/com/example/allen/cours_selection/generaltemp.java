@@ -13,7 +13,7 @@ public class generaltemp extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_generaltemp);
 
-        list = (ImageView)findViewById(R.id.list);
+        list = (ImageView)findViewById(R.id.courselist);
         Intent i = getIntent();
         String type = (String) i.getStringExtra("generaltype");
         if (type.equals("humanity"))
