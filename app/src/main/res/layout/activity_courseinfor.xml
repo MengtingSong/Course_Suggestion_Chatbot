@@ -97,7 +97,7 @@ Is it like magic? Yes! It is! I am so AWESOME!"
 
     <TextView
         android:id="@+id/name"
-        android:layout_width="140dp"
+        android:layout_width="130dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="TextView"
