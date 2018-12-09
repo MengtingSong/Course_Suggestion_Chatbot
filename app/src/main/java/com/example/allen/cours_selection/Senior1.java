@@ -18,6 +18,7 @@ public class Senior1 extends AppCompatActivity implements View.OnClickListener{
     MaterialButton sub2;
     MaterialButton sub3;
     MaterialButton sub4;
+    MaterialButton back;
 
 
     TextView txt1;
@@ -34,6 +35,7 @@ public class Senior1 extends AppCompatActivity implements View.OnClickListener{
         sub2 = (MaterialButton)findViewById(R.id.btn2);
         sub3 = (MaterialButton)findViewById(R.id.btn3);
         sub4 = (MaterialButton)findViewById(R.id.btn4);
+        back = (MaterialButton) findViewById(R.id.back);
 
 
         txt1 = (TextView)findViewById(R.id.msg);
@@ -45,6 +47,14 @@ public class Senior1 extends AppCompatActivity implements View.OnClickListener{
         sub3.setOnClickListener(this);
 
         sub4.setOnClickListener(this);
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Senior1.this,MainActivity.class);
+                startActivity(i);
+            }
+        });
 
 
     }

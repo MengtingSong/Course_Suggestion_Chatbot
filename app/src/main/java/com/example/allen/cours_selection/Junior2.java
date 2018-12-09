@@ -1,6 +1,7 @@
 package com.example.allen.cours_selection;
 
 import android.content.Intent;
+import android.support.design.button.MaterialButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -19,6 +20,8 @@ public class Junior2 extends AppCompatActivity implements View.OnClickListener{
     Button sub3;
     Button sub4;
 
+    MaterialButton back;
+
 
     TextView txt1;
 
@@ -35,6 +38,8 @@ public class Junior2 extends AppCompatActivity implements View.OnClickListener{
         sub3 = (Button)findViewById(R.id.btn3);
         sub4 = (Button)findViewById(R.id.btn4);
 
+        back = (MaterialButton) findViewById(R.id.back);
+
 
         txt1 = (TextView)findViewById(R.id.msg);
 
@@ -45,6 +50,14 @@ public class Junior2 extends AppCompatActivity implements View.OnClickListener{
         sub3.setOnClickListener(this);
 
         sub4.setOnClickListener(this);
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Junior2.this,MainActivity.class);
+                startActivity(i);
+            }
+        });
 
 
     }
@@ -98,7 +111,7 @@ public class Junior2 extends AppCompatActivity implements View.OnClickListener{
                 break;
             }
 
-            case R.id.btn2: {
+            case R.id.btn4: {
                 Intent courseelectiveintent = new Intent(this, engelective.class);
                 startActivity(courseelectiveintent);
                 break;
@@ -108,7 +121,7 @@ public class Junior2 extends AppCompatActivity implements View.OnClickListener{
                 startActivity(courseelectiveintent);
                 break;
             }
-            case R.id.btn4: {
+            case R.id.btn2: {
                 Intent generalelective = new Intent(this, generalelective.class);
                 startActivity(generalelective);
                 break;

@@ -1,6 +1,7 @@
 package com.example.allen.cours_selection;
 
 import android.content.Intent;
+import android.support.design.button.MaterialButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -19,6 +20,8 @@ public class Freshman2 extends AppCompatActivity implements View.OnClickListener
     Button sub3;
     Button sub4;
     Button sub5;
+    MaterialButton back;
+
     Course thecourse = new Course();
     TextView txt1;
     @Override
@@ -30,6 +33,7 @@ public class Freshman2 extends AppCompatActivity implements View.OnClickListener
         sub3 = (Button)findViewById(R.id.btn3);
         sub4 = (Button)findViewById(R.id.btn4);
         sub5 = (Button)findViewById(R.id.btn5);
+        back = (MaterialButton) findViewById(R.id.back);
 
         txt1 = (TextView)findViewById(R.id.msg);
 
@@ -42,6 +46,14 @@ public class Freshman2 extends AppCompatActivity implements View.OnClickListener
         sub4.setOnClickListener(this);
 
         sub5.setOnClickListener(this);
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Freshman2.this,MainActivity.class);
+                startActivity(i);
+            }
+        });
 
 
     }

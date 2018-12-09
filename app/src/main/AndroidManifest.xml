@@ -4,24 +4,39 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/icon"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Junior2" />
-        <activity android:name=".Courseinfor" />
-        <activity android:name=".Junior1" />
-        <activity android:name=".Freshman2" />
-        <activity android:name=".Sophomore1" />
-        <activity android:name=".Sophomore2" />
-        <activity android:name=".Senior1" />
-        <activity android:name=".Senior2" />
-        <activity android:name=".Freshman1" />
-        <activity android:name=".engelective" />
-        <activity android:name=".subject" />
-        <activity android:name=".generalelective" />
-        <activity android:name=".engelelist"></activity>
+
+
+
+
+
+        <activity android:name=".Login" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity">
+
+        </activity>
+        <activity android:name=".Junior2" > </activity>
+        <activity android:name=".Courseinfor" > </activity>
+        <activity android:name=".Junior1" > </activity>
+        <activity android:name=".Freshman2" > </activity>
+        <activity android:name=".Sophomore1" > </activity>
+        <activity android:name=".Sophomore2" > </activity>
+        <activity android:name=".Senior1" > </activity>
+        <activity android:name=".Senior2" > </activity>
+        <activity android:name=".Freshman1" > </activity>
+        <activity android:name=".engelective" > </activity>
+        <activity android:name=".subject" > </activity>
+        <activity android:name=".generalelective" > </activity>
+        <activity android:name=".engelelist" > </activity>
     </application>
 
 </manifest>

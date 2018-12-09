@@ -1,6 +1,7 @@
 package com.example.allen.cours_selection;
 
 import android.content.Intent;
+import android.support.design.button.MaterialButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -20,6 +21,8 @@ public class Junior1 extends AppCompatActivity implements View.OnClickListener{
     Button sub4;
     Button sub5;
 
+    MaterialButton back;
+
     TextView txt1;
 
     Course thecourse=new Course();
@@ -36,6 +39,8 @@ public class Junior1 extends AppCompatActivity implements View.OnClickListener{
         sub4 = (Button)findViewById(R.id.btn4);
         sub5 = (Button)findViewById(R.id.btn5);
 
+        back = (MaterialButton) findViewById(R.id.back);
+
         txt1 = (TextView)findViewById(R.id.msg);
 
         sub1.setOnClickListener(this);
@@ -47,6 +52,14 @@ public class Junior1 extends AppCompatActivity implements View.OnClickListener{
         sub4.setOnClickListener(this);
 
         sub5.setOnClickListener(this);
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Junior1.this,MainActivity.class);
+                startActivity(i);
+            }
+        });
     }
     public void readCourselist(String coursecode)
     {

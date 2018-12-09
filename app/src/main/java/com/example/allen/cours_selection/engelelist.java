@@ -3,6 +3,7 @@ package com.example.allen.cours_selection;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.button.MaterialButton;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -23,8 +24,10 @@ public class engelelist extends AppCompatActivity{
     ListView courselist;
     ArrayList<Course> courselists = new ArrayList<Course>();
     String type;
-    //String subject;
+    String subject;
     Course thecourse = new Course();
+
+    MaterialButton back;
 
 
     @Override
@@ -32,10 +35,12 @@ public class engelelist extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_engelelist);
         Intent i = getIntent();
-        //subject = (String) i.getStringExtra("subject");
+        subject = (String) i.getStringExtra("subject");
         type = (String) i.getStringExtra("electivename");
         courselist = (ListView) findViewById(R.id.courselist);
         generateListcontent(type);
+
+        back = (MaterialButton) findViewById(R.id.back);
 
         Log.d("Myactivity", "here!!!!!!!!!!!!!!!!!!!!!");
         //Log.d("Myactivity", type);
@@ -51,6 +56,14 @@ public class engelelist extends AppCompatActivity{
                     Intent intent = new Intent(engelelist.this, Courseinfor.class);
                     intent.putExtra("MyClass", courselists.get(pos));
                     startActivity(intent);
+            }
+        });
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(engelelist.this,MainActivity.class);
+                startActivity(i);
             }
         });
        // courselist.setAdapter(customAdaptor);
@@ -94,7 +107,7 @@ public class engelelist extends AppCompatActivity{
                 int i=0;
                 String[] token = line.split((","));
                 //read the data
-                if (token[2].equals(type)) {
+                if (token[2].equals(type) && token[7].equals(subject)) {
                     Course onecourse = new Course();
                     onecourse.setCode(token[0]);
                     onecourse.setName(token[1]);

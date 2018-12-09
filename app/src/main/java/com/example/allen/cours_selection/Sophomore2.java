@@ -35,8 +35,8 @@ public class Sophomore2 extends AppCompatActivity implements View.OnClickListene
         sub2 = (MaterialButton) findViewById(R.id.btn2);
         sub3 = (MaterialButton) findViewById(R.id.btn3);
         sub4 = (MaterialButton) findViewById(R.id.btn4);
-        sub5 = (MaterialButton) findViewById(R.id.btn5);
-        back = (MaterialButton) findViewById(R.id.back);
+        sub5 = (MaterialButton) findViewById(R.id .btn5);
+       back = (MaterialButton) findViewById(R.id.back);
 
         txt1 = (TextView) findViewById(R.id.msg);
 
