@@ -73,4 +73,15 @@ Click on the courses to see more details!"
             android:orientation="vertical" />
     </ScrollView>
 
+    <ImageView
+        android:id="@+id/courselist"
+        android:layout_width="321dp"
+        android:layout_height="497dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/humanity_elective" />
+
 </android.support.constraint.ConstraintLayout>
