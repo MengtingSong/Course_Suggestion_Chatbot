@@ -50,7 +50,7 @@
         android:id="@+id/textView"
         android:layout_width="243dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="10dp"
         android:text="Hmmm...Let me think...Which subject are you interested in? No. It's too hard to read your mind! And I don't want to burn my supreme electronic brain!
 So just click on the suject names which you want more information."
         app:layout_constraintBottom_toBottomOf="@+id/chatbubble"

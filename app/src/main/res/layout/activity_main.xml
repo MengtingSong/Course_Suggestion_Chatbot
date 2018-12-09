@@ -63,13 +63,13 @@ Tell me which is your next semester, then I will show you the courses you may wa
         style="@style/Widget.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginLeft="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
         android:layout_marginTop="50dp"
         android:text=" Freshman 1 "
         android:textAllCaps="false"
         android:textColorLink="@color/colorPrimaryDark"
-        android:textSize="14sp"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView7" />
 
@@ -77,13 +77,13 @@ Tell me which is your next semester, then I will show you the courses you may wa
     <android.support.design.button.MaterialButton
         android:id="@+id/btn2"
         style="@style/Widget.Button"
-        android:layout_width="115dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:text=" Freshman 2 "
         android:textAllCaps="false"
-        android:textSize="14sp"
+        android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@+id/btn1"
         app:layout_constraintTop_toTopOf="@+id/btn1" />
 
@@ -96,7 +96,7 @@ Tell me which is your next semester, then I will show you the courses you may wa
         android:layout_marginRight="8dp"
         android:text=" Sophomore 1 "
         android:textAllCaps="false"
-        android:textSize="14sp"
+        android:textSize="16sp"
         app:layout_constraintEnd_toStartOf="@+id/btn4"
         app:layout_constraintTop_toTopOf="@+id/btn4" />
 
@@ -106,11 +106,11 @@ Tell me which is your next semester, then I will show you the courses you may wa
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
         android:text=" Sophomore 2 "
         android:textAllCaps="false"
-        android:textSize="14sp"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn2" />
 
@@ -124,7 +124,7 @@ Tell me which is your next semester, then I will show you the courses you may wa
         android:layout_marginTop="40dp"
         android:text=" Junior 1 "
         android:textAllCaps="false"
-        android:textSize="14sp"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn3" />
 
@@ -137,7 +137,7 @@ Tell me which is your next semester, then I will show you the courses you may wa
         android:layout_marginLeft="8dp"
         android:text=" Junior 2 "
         android:textAllCaps="false"
-        android:textSize="14sp"
+        android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@+id/btn5"
         app:layout_constraintTop_toTopOf="@+id/btn5" />
 
@@ -151,7 +151,7 @@ Tell me which is your next semester, then I will show you the courses you may wa
         android:layout_marginRight="8dp"
         android:text=" Senior 1 "
         android:textAllCaps="false"
-        android:textSize="14sp"
+        android:textSize="16sp"
         app:layout_constraintEnd_toStartOf="@+id/btn8"
         app:layout_constraintTop_toBottomOf="@+id/btn5" />
 
@@ -164,7 +164,7 @@ Tell me which is your next semester, then I will show you the courses you may wa
         android:layout_marginRight="16dp"
         android:text=" Seniro 2 "
         android:textAllCaps="false"
-        android:textSize="14sp"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/btn7" />
 
