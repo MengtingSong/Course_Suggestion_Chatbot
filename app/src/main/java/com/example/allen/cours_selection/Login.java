@@ -7,7 +7,6 @@ import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 public class Login extends AppCompatActivity {
 
@@ -43,9 +42,8 @@ public class Login extends AppCompatActivity {
     public boolean validate(TextInputEditText id)
     {
         String userid = id.getText().toString().trim();
-        if(userid.length() == 9)
+        if(userid.length() == 9 )
         {
-            Toast.makeText(this,"GREAT! LET'S PROCEED",Toast.LENGTH_SHORT).show();
             return true;
         }
         else
