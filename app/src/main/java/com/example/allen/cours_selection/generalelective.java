@@ -20,12 +20,19 @@ public class generalelective extends AppCompatActivity implements View.OnClickLi
         humanity = (MaterialButton) findViewById(R.id.humanity);
         social = (MaterialButton) findViewById(R.id.social);
         general = (MaterialButton) findViewById(R.id.general);
-        //back = (MaterialButton) findViewById(R.id.back);
+        back = (MaterialButton) findViewById(R.id.back);
 
         humanity.setOnClickListener(this);
         social.setOnClickListener(this);
         general.setOnClickListener(this);
-        //back.setOnClickListener(this);
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(generalelective.this,MainActivity.class);
+                startActivity(i);
+            }
+        });
     }
 
     @Override
