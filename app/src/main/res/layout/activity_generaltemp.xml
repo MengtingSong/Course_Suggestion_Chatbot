@@ -57,7 +57,6 @@ Click on the courses to see more details!"
         android:textAllCaps="false"
         android:textColor="@color/colorPrimary"
         android:textColorLink="@color/colorPrimaryDark"
-        android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
