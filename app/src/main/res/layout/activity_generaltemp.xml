@@ -48,7 +48,7 @@ Click on the courses to see more details!"
 
 
     <android.support.design.button.MaterialButton
-        android:id="@+id/back_btn"
+        android:id="@+id/back"
         style="@style/Widget.MaterialComponents.Button.TextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
