@@ -7,6 +7,7 @@ import android.support.design.button.MaterialButton;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.widget.ImageView;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -21,6 +22,13 @@ public class subject extends AppCompatActivity implements View.OnClickListener{
     MaterialButton electro;
     MaterialButton optics;
     MaterialButton bioeng;
+    ImageView ce;
+    ImageView ee;
+    ImageView optic;
+    ImageView system;
+    ImageView telecom;
+    ImageView be;
+
     ArrayList<Course> courselists = new ArrayList<Course>();
     //Course onecourse;
     MaterialButton back;
@@ -40,6 +48,12 @@ public class subject extends AppCompatActivity implements View.OnClickListener{
         electro=(MaterialButton)findViewById(R.id.sub3);
         optics=(MaterialButton)findViewById(R.id.sub8);
         bioeng=(MaterialButton)findViewById(R.id.sub6);
+        ce=(ImageView)findViewById(R.id.cepic);
+        ee=(ImageView)findViewById(R.id.eepic);
+        optic=(ImageView)findViewById(R.id.opticpic);
+        system=(ImageView)findViewById(R.id.systempic);
+        telecom=(ImageView)findViewById(R.id.telecompic);
+        be=(ImageView)findViewById(R.id.bepic);
         back = (MaterialButton) findViewById(R.id.back);
 
         digital.setOnClickListener(this);
@@ -48,6 +62,12 @@ public class subject extends AppCompatActivity implements View.OnClickListener{
         electro.setOnClickListener(this);
         optics.setOnClickListener(this);
         bioeng.setOnClickListener(this);
+        ce.setOnClickListener(this);
+        ee.setOnClickListener(this);
+        optic.setOnClickListener(this);
+        system.setOnClickListener(this);
+        telecom.setOnClickListener(this);
+        be.setOnClickListener(this);
 
         back.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -122,7 +142,42 @@ public class subject extends AppCompatActivity implements View.OnClickListener{
                 }
                 break;
             }
+            case R.id.telecompic:{
+                courselists.clear();
+                Log.d("Myactivity", Integer.toString(courselists.size()));
+                generateListcontent(electivename, "Digital Signal Processing & Telecommunication");
+                if (courselists.size()!=0) {
+                    Intent theelectivename = new Intent(this, engelelist.class);
+                    theelectivename.putExtra("subject", "Digital Signal Processing & Telecommunication");
+                    theelectivename.putExtra("electivename", electivename);
+
+                    startActivity(theelectivename);
+                }
+                else
+                {
+                    Intent theempty = new Intent(this, empty.class);
+                    startActivity(theempty);
+                }
+                break;
+            }
             case R.id.sub1: {
+                courselists.clear();
+                generateListcontent(electivename, "Computer Engineering");
+                if (courselists.size()!=0) {
+                    Intent theelectivename = new Intent(this, engelelist.class);
+                    theelectivename.putExtra("subject", "Computer Engineering");
+                    theelectivename.putExtra("electivename", electivename);
+
+                    startActivity(theelectivename);
+                }
+                else
+                {
+                    Intent theempty = new Intent(this, empty.class);
+                    startActivity(theempty);
+                }
+                break;
+            }
+            case R.id.cepic:{
                 courselists.clear();
                 generateListcontent(electivename, "Computer Engineering");
                 if (courselists.size()!=0) {
@@ -154,7 +209,40 @@ public class subject extends AppCompatActivity implements View.OnClickListener{
                 }
                 break;
             }
+            case R.id.systempic:{
+                courselists.clear();
+                generateListcontent(electivename, "System Control & Microsystem & Electrical Energy ");
+                if (courselists.size()!=0){
+                    Intent theelectivename =new Intent(this, engelelist.class);
+                    theelectivename.putExtra("subject", "System Control & Microsystem & Electrical Energy ");
+                    theelectivename.putExtra("electivename", electivename);
+                    startActivity(theelectivename);}
+                else
+                {
+                    Intent theempty = new Intent(this, empty.class);
+                    startActivity(theempty);
+                }
+                break;
+            }
             case R.id.sub3: {
+                courselists.clear();
+                generateListcontent(electivename, "Electromagnetic & Electronic Design");
+                if (courselists.size()!=0) {
+
+                    Intent theelectivename = new Intent(this, engelelist.class);
+                    theelectivename.putExtra("subject", "Electromagnetic & Electronic Design");
+                    theelectivename.putExtra("electivename", electivename);
+                    startActivity(theelectivename);
+                }
+                else
+                {
+                    Intent theempty = new Intent(this, empty.class);
+                    startActivity(theempty);
+                }
+
+                break;
+            }
+            case R.id.eepic: {
                 courselists.clear();
                 generateListcontent(electivename, "Electromagnetic & Electronic Design");
                 if (courselists.size()!=0) {
@@ -188,7 +276,38 @@ public class subject extends AppCompatActivity implements View.OnClickListener{
                 }
                 break;
             }
+            case R.id.opticpic: {
+                courselists.clear();
+                generateListcontent(electivename, "Optics and Photonics");
+                if (courselists.size()!=0) {
+                    Intent theelectivename = new Intent(this, engelelist.class);
+                    theelectivename.putExtra("subject", "Optics and Photonics");
+                    theelectivename.putExtra("electivename", electivename);
+                    startActivity(theelectivename);
+                }
+                else
+                {
+                    Intent theempty = new Intent(this, empty.class);
+                    startActivity(theempty);
+                }
+                break;
+            }
             case R.id.sub6: {
+                courselists.clear();
+                generateListcontent(electivename, "Bioengineering ");
+                if (courselists.size()!=0) {
+                    Intent theelectivename = new Intent(this, engelelist.class);
+                    theelectivename.putExtra("subject", "Bioengineering ");
+                    startActivity(theelectivename);
+                }
+                else
+                {
+                    Intent theempty = new Intent(this, empty.class);
+                    startActivity(theempty);
+                }
+                break;
+            }
+            case R.id.bepic:{
                 courselists.clear();
                 generateListcontent(electivename, "Bioengineering ");
                 if (courselists.size()!=0) {
