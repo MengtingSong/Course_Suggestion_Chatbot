@@ -48,15 +48,15 @@ Click on the courses to see more details!"
 
 
     <android.support.design.button.MaterialButton
-        android:id="@+id/back_btn"
+        android:id="@+id/back"
         style="@style/Widget.MaterialComponents.Button.TextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@android:color/holo_green_light"
         android:text=" Balck to Grade Selection "
+        android:textAllCaps="false"
         android:textColor="@color/colorPrimary"
         android:textColorLink="@color/colorPrimaryDark"
-        android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -76,7 +76,7 @@ Click on the courses to see more details!"
     <ImageView
         android:id="@+id/courselist"
         android:layout_width="321dp"
-        android:layout_height="497dp"
+        android:layout_height="460dp"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="100dp"
