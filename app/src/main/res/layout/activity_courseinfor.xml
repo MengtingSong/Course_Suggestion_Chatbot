@@ -184,17 +184,6 @@ Is it like magic? Yes! It is! I am so AWESOME!"
         app:layout_constraintBottom_toTopOf="@+id/discrip"
         app:layout_constraintStart_toStartOf="@+id/discrip" />
 
-    <TextView
-        android:id="@+id/discrip"
-        android:layout_width="275dp"
-        android:layout_height="135dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginBottom="32dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <android.support.design.button.MaterialButton
         android:id="@+id/back"
         style="@style/Widget.MaterialComponents.Button.TextButton"
@@ -207,5 +196,32 @@ Is it like magic? Yes! It is! I am so AWESOME!"
         android:textColorLink="@color/colorPrimaryDark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="337dp"
+        android:layout_height="184dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/discrip"
+        android:layout_width="275dp"
+        android:layout_height="135dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="32dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
