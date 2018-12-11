@@ -53,7 +53,7 @@ Click on each course for more details!"
     <ListView
         android:id="@+id/courselist"
         android:layout_width="334dp"
-        android:layout_height="369dp"
+        android:layout_height="340dp"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
         android:layout_marginTop="70dp"
