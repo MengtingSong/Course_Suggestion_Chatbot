@@ -1,3 +1,15 @@
+Demo:
+
+https://drive.google.com/file/d/1zuOzdbY1BfDTBahFk-WSUImIGLIgrus_/view?usp=sharing
+
+1. Vision and Goals Of The Project
+
+
+2. Users/Personas Of The Project
+
+
+3. Scope and Features Of The Project
+
 prof. CoursePlanner starts with a login page, one needs to enter their BU id, make sure there are 9 digits, and click on login to get started.
 You are displayed 8 semesters
 Click on the semester for which you have to choose your classes.
